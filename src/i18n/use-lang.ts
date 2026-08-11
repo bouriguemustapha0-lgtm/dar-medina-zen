@@ -3,7 +3,7 @@ import { content, type Content, type Lang } from "./content";
 
 /** Search param shared by every route: ?lang=en switches the site to English. */
 export const validateLangSearch = (search: Record<string, unknown>) => ({
-  lang: search.lang === "en" ? ("en" as const) : undefined,
+  lang: search["lang"] === "en" ? ("en" as const) : undefined,
 });
 
 export type LangSearch = { lang?: "en" };
