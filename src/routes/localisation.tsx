@@ -9,8 +9,10 @@ import { breadcrumbJsonLd, buildHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/localisation")({
   validateSearch: validateLangSearch,
-  head: ({ search }) => {
-    const lang = search?.lang === "en" ? "en" : "fr";
+  loaderDeps: ({ search }) => ({ lang: search.lang }),
+  loader: ({ deps }) => ({ lang: deps.lang === "en" ? ("en" as const) : ("fr" as const) }),
+  head: ({ loaderData }) => {
+    const lang = loaderData?.lang ?? "fr";
     const t = content[lang];
     return {
       ...buildHead({
