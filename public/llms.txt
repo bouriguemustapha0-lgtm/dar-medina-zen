@@ -1,0 +1,51 @@
+# Riad Dar Medina Land
+
+> Riad Dar Medina Land est un riad traditionnel (maison d'hôtes de luxe) de 11 chambres situé dans la Médina de Marrakech, au Maroc. La maison est organisée autour d'un patio central et dispose d'un centre de bien-être avec hammam sur place.
+
+## Identité (NAP)
+- Nom : Riad Dar Medina Land
+- Type : Riad / maison d'hôtes (LodgingBusiness, Hotel)
+- Adresse : 72 Issebtienne, Rue Derb Jdid, Médina, 40000 Marrakech, Maroc
+- Téléphone / WhatsApp : +212 639 675 900
+- E-mail : contact@darmedinaland.com
+- Langues du site : français (principal), anglais (?lang=en)
+
+## Capacité et chambres
+- 11 chambres au total, réparties sur deux niveaux autour du patio
+- Plusieurs chambres offrent une vue sur les montagnes de l'Atlas
+- Selon les chambres : baignoire spa, toilette séparée, douche à l'italienne
+- Sèche-cheveux et draps de bain fournis dans toutes les chambres
+- Tarifs communiqués sur demande, selon la saison et la durée du séjour
+
+## Équipements et services
+- Centre de bien-être / spa sur place avec hammam traditionnel (réservation la veille conseillée)
+- Petit-déjeuner continental servi chaque matin : crêpes marocaines, fruits frais, fromage, pain, thé à la menthe
+- Patio central planté et terrasse sur les toits de la Médina
+- Wi-Fi dans les chambres et espaces communs, climatisation, linge changé quotidiennement
+- Conciergerie : transferts aéroport Marrakech-Ménara, guides, réservations, dépôt de bagages
+
+## Localisation et distances (depuis le riad)
+- Tombeaux Saadiens : moins de 2 km
+- Jardin Majorelle : environ 25 minutes à pied
+- Palais Bahia : à proximité immédiate
+- Maison de la Photographie de Marrakech : 650 m
+- Médersa Ben Youssef : courte distance à pied
+- Théâtre Royal de Marrakech : 3 km
+- Café Snack Chinguitti : 200 m
+- Arrêt de bus Loada Saidia : environ 10 minutes à pied
+
+## Politique de réservation
+- Réservation en direct par WhatsApp (+212 639 675 900) ou par e-mail ; aucun paiement en ligne sur le site
+- Règlement sur place en dirhams marocains, en espèces ou par carte bancaire
+- Arrivée à partir de 15:00, départ avant 11:00 ; arrivée tardive possible si annoncée à l'avance
+- Annulation gratuite jusqu'à 48 heures avant l'arrivée ; au-delà, la première nuit est due
+- Animaux non acceptés, sauf chiens guides
+- Privatisation possible des 11 chambres pour mariage, séminaire ou réunion de famille
+
+## Pages
+- / — présentation du riad, équipements, avis
+- /chambres — les 11 chambres et leurs équipements
+- /localisation — adresse, distances, accès
+- /galerie — photographies du riad
+- /faq — questions fréquentes (annulation, hammam, transferts, paiement)
+- /contact — demande de réservation

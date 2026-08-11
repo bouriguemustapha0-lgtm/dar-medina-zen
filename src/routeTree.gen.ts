@@ -11,7 +11,11 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ChambresRouteImport } from './routes/chambres'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GalerieRouteImport } from './routes/galerie'
 import { Route as LocalisationRouteImport } from './routes/localisation'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +27,98 @@ const ChambresRoute = ChambresRouteImport.update({
   path: '/chambres',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalerieRoute = GalerieRouteImport.update({
+  id: '/galerie',
+  path: '/galerie',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocalisationRoute = LocalisationRouteImport.update({
   id: '/localisation',
   path: '/localisation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/chambres': typeof ChambresRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
   '/localisation': typeof LocalisationRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/chambres': typeof ChambresRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
   '/localisation': typeof LocalisationRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/chambres': typeof ChambresRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
   '/localisation': typeof LocalisationRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/chambres' | '/localisation'
+  fullPaths:
+    | '/'
+    | '/chambres'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/localisation'
+    | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/chambres' | '/localisation'
-  id: '__root__' | '/' | '/chambres' | '/localisation'
+  to:
+    | '/'
+    | '/chambres'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/localisation'
+    | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/chambres'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/localisation'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChambresRoute: typeof ChambresRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  GalerieRoute: typeof GalerieRoute
   LocalisationRoute: typeof LocalisationRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +137,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChambresRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galerie': {
+      id: '/galerie'
+      path: '/galerie'
+      fullPath: '/galerie'
+      preLoaderRoute: typeof GalerieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/localisation': {
       id: '/localisation'
       path: '/localisation'
       fullPath: '/localisation'
       preLoaderRoute: typeof LocalisationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +178,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChambresRoute: ChambresRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  GalerieRoute: GalerieRoute,
   LocalisationRoute: LocalisationRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
