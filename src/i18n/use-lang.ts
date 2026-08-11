@@ -6,7 +6,7 @@ export const validateLangSearch = (search: Record<string, unknown>) => ({
   lang: search["lang"] === "en" ? ("en" as const) : undefined,
 });
 
-export type LangSearch = { lang?: "en" };
+export type LangSearch = { lang: "en" | undefined };
 
 export function useLang(): {
   lang: Lang;
@@ -22,7 +22,7 @@ export function useLang(): {
   return {
     lang,
     t: content[lang],
-    search: lang === "en" ? { lang: "en" } : {},
+    search: { lang: lang === "en" ? ("en" as const) : undefined },
     pathname: location.pathname,
   };
 }
