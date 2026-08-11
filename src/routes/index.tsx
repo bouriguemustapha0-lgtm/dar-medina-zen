@@ -46,11 +46,12 @@ function HomePage() {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-ink/72" />
+        <div className="absolute inset-0 bg-ink/35" />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, var(--ink) 0%, transparent 35%, var(--ink) 100%)", opacity: 0.85 }}
+          style={{ background: "linear-gradient(180deg, var(--ink) 0%, transparent 42%, var(--ink) 100%)", opacity: 0.75 }}
         />
+
         <div className="relative mx-auto max-w-4xl px-6 pt-24 text-center">
           <p className="eyebrow">{t.home.heroEyebrow}</p>
           <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-foreground sm:text-5xl md:text-[3.9rem]">
