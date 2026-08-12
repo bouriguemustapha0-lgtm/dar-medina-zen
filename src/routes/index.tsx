@@ -209,6 +209,69 @@ function HomePage() {
         </div>
       </section>
 
+      {/* LOCALISATION — distances vérifiables + carte */}
+      <section className="bg-cobalt-deep py-24 text-on-dark sm:py-28">
+        <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <Reveal>
+            <h2 className="font-display text-4xl leading-[1.1] sm:text-5xl">{t.location.heading}</h2>
+            <p className="mt-7 text-[0.95rem] leading-relaxed text-on-dark/80">{t.location.lead}</p>
+            <dl className="mt-10">
+              {DISTANCE_KEYS.map((key) => {
+                const row = t.location.distances[key];
+                return (
+                  <div
+                    key={key}
+                    className="flex items-baseline justify-between gap-6 border-b border-on-dark/20 py-4 text-sm"
+                  >
+                    <dt className="text-on-dark/85">{row.place}</dt>
+                    <dd className="font-display text-lg text-terracotta">{row.distance}</dd>
+                  </div>
+                );
+              })}
+            </dl>
+            <p className="mt-6 text-xs text-on-dark/55">{t.location.mapCaption}</p>
+            <Link
+              to="/localisation"
+              search={search}
+              className="btn-gold btn-gold-hover arch-pill mt-8 !border-on-dark/50 !text-on-dark"
+            >
+              {t.cta.seeLocation}
+            </Link>
+          </Reveal>
+
+          <Reveal delay={120} className="rounded-2xl border border-on-dark/25 bg-on-dark/10 p-2 shadow-warm-lg">
+            <iframe
+              title={t.location.mapCaption}
+              src={mapEmbedSrc}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-[22rem] w-full rounded-xl sm:h-[27rem]"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* RÉSERVATION — formulaire sur photo du patio */}
+      <section className="relative overflow-hidden py-24 sm:py-28">
+        <img
+          src={heroPatio}
+          alt={t.images.hero}
+          width={1920}
+          height={1088}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-terracotta/55" />
+        <div className="relative mx-auto max-w-3xl px-5 sm:px-8">
+          <div className="text-center text-on-dark">
+            <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.contact.eyebrow}</p>
+            <h2 className="mt-5 font-display text-3xl sm:text-4xl">{t.contact.heading}</h2>
+          </div>
+          <BookingForm className="mt-10" />
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="zellige-pattern border-y border-border bg-ink py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
