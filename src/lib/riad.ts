@@ -32,9 +32,9 @@ export const mapsLink =
   encodeURIComponent(`${RIAD.name}, ${RIAD.street}, ${RIAD.city}`);
 
 /** Carte Google : un seul repère nommé « Riad Dar Medina Land ». */
-export const mapEmbedSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-  `${RIAD.name}, ${RIAD.street}, ${RIAD.postalCode} ${RIAD.city}, ${RIAD.countryName}`,
-)}&z=17&hl=fr&output=embed`;
+export const mapEmbedSrc = `https://www.google.com/maps?q=${RIAD.latitude},${RIAD.longitude}(${encodeURIComponent(
+  RIAD.name,
+)})&z=18&hl=fr&output=embed`;
 
 /** Types de chambres proposés à la réservation. */
 export const ROOM_TYPES = [
