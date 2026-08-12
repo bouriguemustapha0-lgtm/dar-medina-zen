@@ -4,7 +4,8 @@ import { SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
-import { DISTANCE_KEYS, RIAD, mapEmbedSrc, mapsLink } from "@/lib/riad";
+import { DISTANCE_KEYS, RIAD, mapsLink } from "@/lib/riad";
+import { RiadMap } from "@/components/riad-map";
 import { breadcrumbJsonLd, buildHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/localisation")({
@@ -106,13 +107,7 @@ function LocationPage() {
           <h2 className="text-2xl">{t.location.mapTitle}</h2>
           <span className="hairline mt-5 block w-20" />
           <div className="mt-8 border border-border p-2">
-            <iframe
-              title={t.location.mapCaption}
-              src={mapEmbedSrc}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-[22rem] w-full sm:h-[28rem]"
-            />
+            <RiadMap title={t.location.mapCaption} className="h-[22rem] w-full overflow-hidden sm:h-[28rem]" />
           </div>
           <p className="mt-4 text-xs text-muted-foreground">{t.location.mapCaption}</p>
         </div>

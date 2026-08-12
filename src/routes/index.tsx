@@ -6,7 +6,8 @@ import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
 import { BookingForm } from "@/components/booking-form";
-import { DISTANCE_KEYS, RIAD, mapEmbedSrc, whatsappLink } from "@/lib/riad";
+import { DISTANCE_KEYS, RIAD, whatsappLink } from "@/lib/riad";
+import { RiadMap } from "@/components/riad-map";
 import { buildHead, lodgingJsonLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -241,13 +242,7 @@ function HomePage() {
           </Reveal>
 
           <Reveal delay={120} className="rounded-2xl border border-on-dark/25 bg-on-dark/10 p-2 shadow-warm-lg">
-            <iframe
-              title={t.location.mapCaption}
-              src={mapEmbedSrc}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-[22rem] w-full rounded-xl sm:h-[27rem]"
-            />
+            <RiadMap title={t.location.mapCaption} className="h-[22rem] w-full overflow-hidden rounded-xl sm:h-[27rem]" />
           </Reveal>
         </div>
       </section>
