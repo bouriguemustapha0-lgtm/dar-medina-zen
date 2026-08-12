@@ -41,7 +41,12 @@ function GalleryPage() {
     { src: spaHammam, alt: t.images.spa, span: "sm:col-span-2" },
     { src: terrasse, alt: t.images.terrace, span: "" },
     { src: petitDejeuner, alt: t.images.breakfast, span: "" },
+    { src: patioJourPhoto, alt: t.images.hero, span: "sm:col-span-2" },
+    { src: salonPhoto, alt: t.images.zellige, span: "" },
+    { src: entreePatioPhoto, alt: t.images.hero, span: "" },
+    { src: theMenthePhoto, alt: t.images.breakfast, span: "sm:col-span-2" },
   ];
+
 
   return (
     <>
