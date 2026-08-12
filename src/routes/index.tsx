@@ -167,7 +167,7 @@ function HomePage() {
               const Icon = AMENITY_ICONS[i] ?? Sparkles;
               return (
                 <li key={a.title} className="bg-ink p-8 transition-colors duration-500 hover:bg-ink-soft">
-                  <Icon className="h-6 w-6 text-gold" strokeWidth={1} />
+                  <Icon className="h-6 w-6 text-olive" strokeWidth={1} />
                   <h3 className="mt-5 text-xl">{a.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a.text}</p>
                 </li>
@@ -186,16 +186,16 @@ function HomePage() {
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {t.home.reviews.map((r, i) => (
               <Reveal key={r.author} delay={i * 110}>
-                <figure className="flex h-full flex-col border border-border p-8">
+                <figure className="flex h-full flex-col border border-border border-l-2 border-l-terracotta bg-ivory p-8">
                   <div className="flex gap-1" aria-label={`${r.rating}/5`}>
                     {Array.from({ length: r.rating }).map((_, s) => (
-                      <Star key={s} className="h-3.5 w-3.5 fill-gold text-gold" strokeWidth={1} />
+                      <Star key={s} className="h-3.5 w-3.5 fill-terracotta text-terracotta" strokeWidth={1} />
                     ))}
                   </div>
                   <blockquote className="mt-6 flex-1 text-[0.95rem] leading-relaxed text-foreground/85">
                     “{r.text}”
                   </blockquote>
-                  <figcaption className="mt-6 text-xs uppercase tracking-[0.2em] text-gold">
+                  <figcaption className="mt-6 text-xs uppercase tracking-[0.2em] text-cobalt">
                     {r.author}
                     <span className="ml-2 text-muted-foreground/70 normal-case tracking-normal">{r.origin}</span>
                   </figcaption>
