@@ -59,7 +59,7 @@ export function SiteHeader() {
               key={link.to}
               to={link.to}
               search={search}
-              activeProps={{ className: "!text-terracotta" }}
+              activeProps={{ className: solid ? "!text-terracotta" : "!text-on-dark" }}
               className={`text-[0.7rem] uppercase tracking-[0.22em] ${toneSoft} transition-colors hover:text-terracotta`}
             >
               {t.nav[link.key]}
