@@ -5,7 +5,8 @@ import { EightPointStar, SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
-import { RIAD, whatsappLink } from "@/lib/riad";
+import { BookingForm } from "@/components/booking-form";
+import { DISTANCE_KEYS, RIAD, mapEmbedSrc, whatsappLink } from "@/lib/riad";
 import { buildHead, lodgingJsonLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
