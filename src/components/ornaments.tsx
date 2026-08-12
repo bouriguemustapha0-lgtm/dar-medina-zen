@@ -18,7 +18,7 @@ export function Divider({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center justify-center gap-5 ${className}`} aria-hidden="true">
       <span className="hairline w-16 sm:w-28" />
-      <EightPointStar className="h-4 w-4 text-gold" />
+      <EightPointStar className="h-4 w-4 text-olive" />
       <span className="hairline w-16 sm:w-28" />
     </div>
   );

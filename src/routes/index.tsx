@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Bath, Croissant, Trees, Wifi, ConciergeBell, Star } from "lucide-react";
 import { heroPatio, chambreAtlas, detailZellige, terrasse } from "@/lib/photos";
-import { Divider, EightPointStar, SectionTitle } from "@/components/ornaments";
+import { EightPointStar, SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
@@ -33,7 +33,7 @@ function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
         <img
           src={heroPatio}
           alt={t.images.hero}
@@ -43,19 +43,25 @@ function HomePage() {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-ink/35" />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, var(--ink) 0%, transparent 42%, var(--ink) 100%)", opacity: 0.75 }}
+          style={{
+            background:
+              "linear-gradient(180deg, oklch(0.18 0.03 250 / 62%) 0%, oklch(0.18 0.03 250 / 28%) 45%, oklch(0.18 0.03 250 / 72%) 100%)",
+          }}
         />
 
         <div className="relative mx-auto max-w-4xl px-6 pt-24 text-center">
-          <p className="eyebrow">{t.home.heroEyebrow}</p>
-          <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-foreground sm:text-5xl md:text-[3.9rem]">
+          <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.home.heroEyebrow}</p>
+          <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-on-dark sm:text-5xl md:text-[3.9rem]">
             {t.home.heroTitle}
           </h1>
-          <Divider className="mt-8" />
-          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-foreground/80 sm:text-base">
+          <div className="mt-8 flex items-center justify-center gap-5" aria-hidden="true">
+            <span className="h-px w-16 bg-on-dark/40 sm:w-28" />
+            <EightPointStar className="h-4 w-4 text-on-dark" />
+            <span className="h-px w-16 bg-on-dark/40 sm:w-28" />
+          </div>
+          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-on-dark/85 sm:text-base">
             {t.home.heroLead}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -67,7 +73,11 @@ function HomePage() {
             >
               {t.cta.bookWhatsapp}
             </a>
-            <Link to="/chambres" search={search} className="btn-gold btn-gold-hover w-full sm:w-auto">
+            <Link
+              to="/chambres"
+              search={search}
+              className="btn-gold btn-gold-hover w-full !border-on-dark !text-on-dark sm:w-auto"
+            >
               {t.cta.discoverRooms}
             </Link>
           </div>
@@ -143,7 +153,7 @@ function HomePage() {
       </section>
 
       {/* ÉQUIPEMENTS */}
-      <section className="bg-ink py-24 sm:py-32">
+      <section className="zellige-pattern bg-ink py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <Reveal>
             <SectionTitle
@@ -157,7 +167,7 @@ function HomePage() {
               const Icon = AMENITY_ICONS[i] ?? Sparkles;
               return (
                 <li key={a.title} className="bg-ink p-8 transition-colors duration-500 hover:bg-ink-soft">
-                  <Icon className="h-6 w-6 text-gold" strokeWidth={1} />
+                  <Icon className="h-6 w-6 text-olive" strokeWidth={1} />
                   <h3 className="mt-5 text-xl">{a.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a.text}</p>
                 </li>
@@ -176,16 +186,16 @@ function HomePage() {
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {t.home.reviews.map((r, i) => (
               <Reveal key={r.author} delay={i * 110}>
-                <figure className="flex h-full flex-col border border-border p-8">
+                <figure className="flex h-full flex-col border border-border border-l-2 border-l-terracotta bg-ivory p-8">
                   <div className="flex gap-1" aria-label={`${r.rating}/5`}>
                     {Array.from({ length: r.rating }).map((_, s) => (
-                      <Star key={s} className="h-3.5 w-3.5 fill-gold text-gold" strokeWidth={1} />
+                      <Star key={s} className="h-3.5 w-3.5 fill-terracotta text-terracotta" strokeWidth={1} />
                     ))}
                   </div>
                   <blockquote className="mt-6 flex-1 text-[0.95rem] leading-relaxed text-foreground/85">
                     “{r.text}”
                   </blockquote>
-                  <figcaption className="mt-6 text-xs uppercase tracking-[0.2em] text-gold">
+                  <figcaption className="mt-6 text-xs uppercase tracking-[0.2em] text-cobalt">
                     {r.author}
                     <span className="ml-2 text-muted-foreground/70 normal-case tracking-normal">{r.origin}</span>
                   </figcaption>
@@ -200,7 +210,7 @@ function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="border-y border-border bg-ink py-20">
+      <section className="zellige-pattern border-y border-border bg-ink py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <EightPointStar className="mx-auto h-7 w-7 text-gold" />
           <h2 className="mt-6 text-3xl sm:text-4xl">{t.contact.heading}</h2>
