@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { heroPatio, chambreAtlas, spaHammam, detailZellige, terrasse, petitDejeuner } from "@/lib/photos";
+import { heroPatio, chambreAtlas, spaHammam, detailZellige, terrasse, petitDejeuner, patioJourPhoto, salonPhoto, entreePatioPhoto, theMenthePhoto } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
@@ -64,7 +64,7 @@ function GalleryPage() {
       <section className="bg-ink pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl auto-rows-[14rem] grid-cols-1 gap-3 px-5 sm:grid-cols-4 sm:auto-rows-[15rem] sm:px-8">
           {photos.map((photo, i) => (
-            <Reveal key={photo.alt} delay={i * 70} className={`overflow-hidden ${photo.span}`}>
+            <Reveal key={photo.src} delay={i * 70} className={`overflow-hidden ${photo.span}`}>
               <img
                 src={photo.src}
                 alt={photo.alt}
