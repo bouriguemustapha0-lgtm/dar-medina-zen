@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { EightPointStar } from "@/components/ornaments";
 import { useLang } from "@/i18n/use-lang";
 import { RIAD, ROOM_KEYS, whatsappLink } from "@/lib/riad";
 
