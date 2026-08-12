@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Bath, Croissant, Trees, Wifi, ConciergeBell, Star } from "lucide-react";
 import { heroPatio, chambreAtlas, detailZellige, terrasse } from "@/lib/photos";
-import { Divider, EightPointStar, SectionTitle } from "@/components/ornaments";
+import { EightPointStar, SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
@@ -153,7 +153,7 @@ function HomePage() {
       </section>
 
       {/* ÉQUIPEMENTS */}
-      <section className="bg-ink py-24 sm:py-32">
+      <section className="zellige-pattern bg-ink py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <Reveal>
             <SectionTitle
@@ -210,7 +210,7 @@ function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="border-y border-border bg-ink py-20">
+      <section className="zellige-pattern border-y border-border bg-ink py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <EightPointStar className="mx-auto h-7 w-7 text-gold" />
           <h2 className="mt-6 text-3xl sm:text-4xl">{t.contact.heading}</h2>
