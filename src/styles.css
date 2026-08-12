@@ -28,6 +28,7 @@
   --color-ink-soft: var(--ink-soft);
   --color-ivory: var(--ivory);
   --color-ivory-foreground: var(--ivory-foreground);
+  --color-on-dark: var(--on-dark);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
