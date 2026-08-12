@@ -27,7 +27,7 @@ export function SiteHeader() {
 
   useEffect(() => setOpen(false), [pathname]);
 
-  const solid = scrolled || open;
+  const solid = scrolled || open || pathname !== "/";
   const tone = solid ? "text-foreground" : "text-on-dark";
   const toneSoft = solid ? "text-foreground/75" : "text-on-dark/80";
   const accent = solid ? "text-cobalt" : "text-on-dark";
@@ -37,7 +37,7 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled || open ? "bg-ink/95 backdrop-blur-sm shadow-frame" : "bg-transparent"
+        solid ? "bg-ink/95 backdrop-blur-sm shadow-frame" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
