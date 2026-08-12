@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Eye, Bath, Tag } from "lucide-react";
 import { chambreAtlas, detailZellige, terrasse, heroPatio, spaHammam } from "@/lib/photos";
-import { SectionTitle } from "@/components/ornaments";
+import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
+import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
