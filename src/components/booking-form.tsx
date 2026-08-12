@@ -33,14 +33,25 @@ export function BookingForm({ className = "" }: { className?: string }) {
   };
 
   const field =
-    "mt-2 w-full rounded-xl border border-on-dark/25 bg-on-dark/10 px-4 py-3 text-sm text-on-dark outline-none transition-colors placeholder:text-on-dark/50 focus:border-on-dark/70";
-  const label = "block text-[0.65rem] uppercase tracking-[0.22em] text-on-dark/80";
+    "mt-2 w-full rounded-none border border-on-dark/30 bg-on-dark/8 px-4 py-3 text-sm text-on-dark outline-none transition-colors placeholder:text-on-dark/45 focus:border-on-dark/75 focus:bg-on-dark/12";
+  const label = "block text-[0.65rem] uppercase tracking-[0.22em] text-on-dark/70";
 
   return (
     <form
       onSubmit={onSubmit}
-      className={`rounded-3xl border border-on-dark/20 bg-terracotta/75 p-7 shadow-warm-lg backdrop-blur-md sm:p-9 ${className}`}
+      className={`relative border border-on-dark/18 p-7 shadow-warm-lg backdrop-blur-md sm:p-10 ${className}`}
+      style={{
+        background:
+          "linear-gradient(160deg, oklch(0.468 0.135 251 / 88%) 0%, oklch(0.3 0.09 252 / 90%) 100%)",
+      }}
     >
+      <span className="pointer-events-none absolute inset-2 border border-on-dark/12" aria-hidden="true" />
+      <div className="relative mb-8 flex items-center justify-center gap-4" aria-hidden="true">
+        <span className="h-px w-14 bg-on-dark/25" />
+        <EightPointStar className="h-4 w-4 text-terracotta" />
+        <span className="h-px w-14 bg-on-dark/25" />
+      </div>
+
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <label className={label} htmlFor="bf-name">
