@@ -239,11 +239,6 @@
     border-color 0.4s ease,
     color 0.4s ease,
     box-shadow 0.4s ease;
-  &:hover {
-    background: var(--terracotta);
-    border-color: var(--terracotta);
-    color: var(--on-primary);
-  }
 }
 
 @utility reveal {
