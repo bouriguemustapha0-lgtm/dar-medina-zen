@@ -1,0 +1,21 @@
+import patio from "@/assets/patio.jpg.asset.json";
+import patioJour from "@/assets/patio-jour.jpg.asset.json";
+import entreePatio from "@/assets/entree-patio.jpg.asset.json";
+import chambre from "@/assets/chambre.jpg.asset.json";
+import salon from "@/assets/salon.jpg.asset.json";
+import zellige from "@/assets/zellige.jpg.asset.json";
+import terrasseImg from "@/assets/terrasse.jpg.asset.json";
+import salleBain from "@/assets/salle-bain.jpg.asset.json";
+import petitDej from "@/assets/petit-dejeuner.jpg.asset.json";
+import theMenthe from "@/assets/the-menthe.jpg.asset.json";
+
+export const heroPatio = patio.url;
+export const patioJourPhoto = patioJour.url;
+export const entreePatioPhoto = entreePatio.url;
+export const chambreAtlas = chambre.url;
+export const salonPhoto = salon.url;
+export const detailZellige = zellige.url;
+export const terrasse = terrasseImg.url;
+export const spaHammam = salleBain.url;
+export const petitDejeuner = petitDej.url;
+export const theMenthePhoto = theMenthe.url;

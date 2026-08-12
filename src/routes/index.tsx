@@ -1,9 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Bath, Croissant, Trees, Wifi, ConciergeBell, Star } from "lucide-react";
-import heroPatio from "@/assets/hero-patio.jpg";
-import chambreAtlas from "@/assets/chambre-vue-montagne.jpg";
-import detailZellige from "@/assets/detail-zellige.jpg";
-import terrasse from "@/assets/terrasse-medina.jpg";
+import { heroPatio, chambreAtlas, detailZellige, terrasse } from "@/lib/photos";
 import { Divider, EightPointStar, SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";

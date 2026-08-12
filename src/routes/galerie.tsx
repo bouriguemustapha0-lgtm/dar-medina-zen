@@ -1,10 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroPatio from "@/assets/hero-patio.jpg";
-import chambreAtlas from "@/assets/chambre-vue-montagne.jpg";
-import spaHammam from "@/assets/spa-hammam.jpg";
-import detailZellige from "@/assets/detail-zellige.jpg";
-import terrasse from "@/assets/terrasse-medina.jpg";
-import petitDejeuner from "@/assets/petit-dejeuner.jpg";
+import { heroPatio, chambreAtlas, spaHammam, detailZellige, terrasse, petitDejeuner, patioJourPhoto, salonPhoto, entreePatioPhoto, theMenthePhoto } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
@@ -46,7 +41,12 @@ function GalleryPage() {
     { src: spaHammam, alt: t.images.spa, span: "sm:col-span-2" },
     { src: terrasse, alt: t.images.terrace, span: "" },
     { src: petitDejeuner, alt: t.images.breakfast, span: "" },
+    { src: patioJourPhoto, alt: t.images.hero, span: "sm:col-span-2" },
+    { src: salonPhoto, alt: t.images.zellige, span: "" },
+    { src: entreePatioPhoto, alt: t.images.hero, span: "" },
+    { src: theMenthePhoto, alt: t.images.breakfast, span: "sm:col-span-2" },
   ];
+
 
   return (
     <>
@@ -64,7 +64,7 @@ function GalleryPage() {
       <section className="bg-ink pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl auto-rows-[14rem] grid-cols-1 gap-3 px-5 sm:grid-cols-4 sm:auto-rows-[15rem] sm:px-8">
           {photos.map((photo, i) => (
-            <Reveal key={photo.alt} delay={i * 70} className={`overflow-hidden ${photo.span}`}>
+            <Reveal key={photo.src} delay={i * 70} className={`overflow-hidden ${photo.span}`}>
               <img
                 src={photo.src}
                 alt={photo.alt}
