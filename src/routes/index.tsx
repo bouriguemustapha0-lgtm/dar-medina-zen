@@ -267,10 +267,7 @@ function HomePage() {
         <div className="relative mx-auto max-w-3xl px-5 sm:px-8">
           <div className="text-center text-on-dark">
             <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.contact.eyebrow}</p>
-            <h2 className="mt-5 font-display text-3xl sm:text-4xl">
-              {t.nav.contact === "Contact" && t.rooms.priceLabel ? null : null}
-              {t.cta.bookWhatsapp}
-            </h2>
+            <h2 className="mt-5 font-display text-3xl sm:text-4xl">{t.cta.bookWhatsapp}</h2>
           </div>
           <BookingForm className="mt-10" />
         </div>
