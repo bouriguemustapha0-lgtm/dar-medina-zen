@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { EightPointStar } from "@/components/ornaments";
 import { useLang } from "@/i18n/use-lang";
-import { RIAD, ROOM_KEYS, whatsappLink } from "@/lib/riad";
+import { RIAD, ROOM_TYPES, whatsappLink } from "@/lib/riad";
 
 /** Carte de réservation (fond translucide) : ouvre WhatsApp pré-rempli. */
 export function BookingForm({ className = "" }: { className?: string }) {
@@ -105,9 +105,9 @@ export function BookingForm({ className = "" }: { className?: string }) {
           </label>
           <select id="bf-room" value={form.room} onChange={set("room")} className={field}>
             <option value="">{t.contact.form.roomAny}</option>
-            {ROOM_KEYS.map((key) => (
-              <option key={key} value={t.rooms.items[key].name}>
-                {t.rooms.items[key].name}
+            {ROOM_TYPES.map((type) => (
+              <option key={type.key} value={lang === "en" ? type.en : type.fr}>
+                {lang === "en" ? type.en : type.fr}
               </option>
             ))}
           </select>

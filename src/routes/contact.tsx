@@ -5,7 +5,7 @@ import { petitDejeuner } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
-import { RIAD, ROOM_KEYS, mapsLink, whatsappLink } from "@/lib/riad";
+import { RIAD, ROOM_TYPES, mapsLink, whatsappLink } from "@/lib/riad";
 import { breadcrumbJsonLd, buildHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
@@ -139,9 +139,9 @@ function ContactPage() {
                 </label>
                 <select id="room" value={form.room} onChange={set("room")} className={field}>
                   <option value="">{t.contact.form.roomAny}</option>
-                  {ROOM_KEYS.map((key) => (
-                    <option key={key} value={t.rooms.items[key].name}>
-                      {t.rooms.items[key].name}
+                  {ROOM_TYPES.map((type) => (
+                    <option key={type.key} value={lang === "en" ? type.en : type.fr}>
+                      {lang === "en" ? type.en : type.fr}
                     </option>
                   ))}
                 </select>

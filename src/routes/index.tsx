@@ -225,7 +225,7 @@ function HomePage() {
                     className="flex items-baseline justify-between gap-6 border-b border-on-dark/20 py-4 text-sm"
                   >
                     <dt className="text-on-dark/85">{row.place}</dt>
-                    <dd className="font-display text-lg text-terracotta">{row.distance}</dd>
+                    <dd className="font-display text-lg text-on-dark">{row.distance}</dd>
                   </div>
                 );
               })}
