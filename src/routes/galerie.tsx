@@ -1,7 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { heroPatio, chambreAtlas, spaHammam, detailZellige, terrasse, petitDejeuner, patioJourPhoto, salonPhoto, entreePatioPhoto, theMenthePhoto } from "@/lib/photos";
+import { useState } from "react";
+import {
+  heroPatio,
+  chambreAtlas,
+  spaHammam,
+  detailZellige,
+  terrasse,
+  petitDejeuner,
+  patioJourPhoto,
+  salonPhoto,
+  entreePatioPhoto,
+  theMenthePhoto,
+} from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
+import { MoucharabiehWatermark } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
+import { Lightbox } from "@/components/lightbox";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
 import { breadcrumbJsonLd, buildHead } from "@/lib/seo";
@@ -32,25 +46,31 @@ export const Route = createFileRoute("/galerie")({
 });
 
 function GalleryPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  /** Masonry irrégulier : hauteurs variées, quelques cadres en arc mauresque. */
   const photos = [
-    { src: heroPatio, alt: t.images.hero, span: "sm:col-span-2 sm:row-span-2" },
-    { src: chambreAtlas, alt: t.images.room, span: "" },
-    { src: detailZellige, alt: t.images.zellige, span: "" },
-    { src: spaHammam, alt: t.images.spa, span: "sm:col-span-2" },
-    { src: terrasse, alt: t.images.terrace, span: "" },
-    { src: petitDejeuner, alt: t.images.breakfast, span: "" },
-    { src: patioJourPhoto, alt: t.images.hero, span: "sm:col-span-2" },
-    { src: salonPhoto, alt: t.images.zellige, span: "" },
-    { src: entreePatioPhoto, alt: t.images.hero, span: "" },
-    { src: theMenthePhoto, alt: t.images.breakfast, span: "sm:col-span-2" },
+    { src: heroPatio, alt: t.images.hero, h: "h-[26rem] sm:h-[34rem]", arch: true },
+    { src: chambreAtlas, alt: t.images.room, h: "h-64 sm:h-72", arch: false },
+    { src: detailZellige, alt: t.images.zellige, h: "h-72 sm:h-[22rem]", arch: false },
+    { src: spaHammam, alt: t.images.spa, h: "h-64 sm:h-[19rem]", arch: true },
+    { src: terrasse, alt: t.images.terrace, h: "h-72 sm:h-[26rem]", arch: false },
+    { src: petitDejeuner, alt: t.images.breakfast, h: "h-64 sm:h-64", arch: false },
+    { src: patioJourPhoto, alt: t.images.hero, h: "h-72 sm:h-[30rem]", arch: true },
+    { src: salonPhoto, alt: t.images.zellige, h: "h-64 sm:h-[21rem]", arch: false },
+    { src: entreePatioPhoto, alt: t.images.hero, h: "h-72 sm:h-[24rem]", arch: false },
+    { src: theMenthePhoto, alt: t.images.breakfast, h: "h-64 sm:h-[18rem]", arch: false },
   ];
 
+  const labels =
+    lang === "en"
+      ? { close: "Close", prev: "Previous photo", next: "Next photo" }
+      : { close: "Fermer", prev: "Photo précédente", next: "Photo suivante" };
 
   return (
     <>
-      <section className="bg-ink px-5 pb-14 pt-36 sm:px-8 sm:pt-44">
+      <section className="paper-grain bg-ink px-5 pb-14 pt-36 sm:px-8 sm:pt-44">
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow={t.gallery.eyebrow}
@@ -61,23 +81,45 @@ function GalleryPage() {
         </div>
       </section>
 
-      <section className="bg-ink pb-24 sm:pb-32">
-        <div className="mx-auto grid max-w-7xl auto-rows-[14rem] grid-cols-1 gap-3 px-5 sm:grid-cols-4 sm:auto-rows-[15rem] sm:px-8">
-          {photos.map((photo, i) => (
-            <Reveal key={photo.src} delay={i * 70} className={`overflow-hidden ${photo.span}`}>
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                width={1280}
-                height={960}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-[1.04]"
-              />
-            </Reveal>
-          ))}
+      <section className="paper-grain relative overflow-hidden bg-ink pb-24 sm:pb-32">
+        <MoucharabiehWatermark className="pointer-events-none absolute -right-10 top-24 hidden h-72 w-72 text-cobalt opacity-[0.07] lg:block" />
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+            {photos.map((photo, i) => (
+              <Reveal key={`${photo.src}-${i}`} delay={(i % 3) * 90} className="break-inside-avoid">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(i)}
+                  aria-label={photo.alt}
+                  className={`room-card group block w-full border border-border bg-ivory p-1.5 shadow-warm ${
+                    photo.arch ? "arch-soft" : ""
+                  }`}
+                >
+                  <span className={`block overflow-hidden ${photo.arch ? "arch-soft" : ""}`}>
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={1280}
+                      height={960}
+                      loading="lazy"
+                      decoding="async"
+                      className={`w-full object-cover ${photo.h}`}
+                    />
+                  </span>
+                </button>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
+
+      <Lightbox
+        photos={photos.map(({ src, alt }) => ({ src, alt }))}
+        index={openIndex}
+        onClose={() => setOpenIndex(null)}
+        onIndexChange={setOpenIndex}
+        labels={labels}
+      />
     </>
   );
 }
