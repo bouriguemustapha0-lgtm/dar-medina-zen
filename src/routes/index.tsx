@@ -33,7 +33,7 @@ function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
         <img
           src={heroPatio}
           alt={t.images.hero}
@@ -43,19 +43,25 @@ function HomePage() {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-ink/35" />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, var(--ink) 0%, transparent 42%, var(--ink) 100%)", opacity: 0.75 }}
+          style={{
+            background:
+              "linear-gradient(180deg, oklch(0.18 0.03 250 / 62%) 0%, oklch(0.18 0.03 250 / 28%) 45%, oklch(0.18 0.03 250 / 72%) 100%)",
+          }}
         />
 
         <div className="relative mx-auto max-w-4xl px-6 pt-24 text-center">
-          <p className="eyebrow">{t.home.heroEyebrow}</p>
-          <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-foreground sm:text-5xl md:text-[3.9rem]">
+          <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.home.heroEyebrow}</p>
+          <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-on-dark sm:text-5xl md:text-[3.9rem]">
             {t.home.heroTitle}
           </h1>
-          <Divider className="mt-8" />
-          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-foreground/80 sm:text-base">
+          <div className="mt-8 flex items-center justify-center gap-5" aria-hidden="true">
+            <span className="h-px w-16 bg-on-dark/40 sm:w-28" />
+            <EightPointStar className="h-4 w-4 text-on-dark" />
+            <span className="h-px w-16 bg-on-dark/40 sm:w-28" />
+          </div>
+          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-on-dark/85 sm:text-base">
             {t.home.heroLead}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -67,7 +73,11 @@ function HomePage() {
             >
               {t.cta.bookWhatsapp}
             </a>
-            <Link to="/chambres" search={search} className="btn-gold btn-gold-hover w-full sm:w-auto">
+            <Link
+              to="/chambres"
+              search={search}
+              className="btn-gold btn-gold-hover w-full !border-on-dark !text-on-dark sm:w-auto"
+            >
               {t.cta.discoverRooms}
             </Link>
           </div>
