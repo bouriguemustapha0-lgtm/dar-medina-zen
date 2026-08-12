@@ -263,13 +263,19 @@ function HomePage() {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-terracotta/55" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, oklch(0.2 0.03 252 / 72%) 0%, oklch(0.2 0.03 252 / 45%) 45%, oklch(0.2 0.03 252 / 78%) 100%)",
+          }}
+        />
         <div className="relative mx-auto max-w-3xl px-5 sm:px-8">
           <div className="text-center text-on-dark">
-            <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.contact.eyebrow}</p>
-            <h2 className="mt-5 font-display text-3xl sm:text-4xl">{t.cta.bookWhatsapp}</h2>
+            <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/80">{t.contact.eyebrow}</p>
+            <h2 className="mt-5 font-display text-4xl leading-[1.1] sm:text-5xl">{t.cta.bookWhatsapp}</h2>
           </div>
-          <BookingForm className="mt-10" />
+          <BookingForm className="mt-12" />
         </div>
       </section>
 
