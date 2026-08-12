@@ -36,11 +36,13 @@ export const mapEmbedSrc = `https://www.google.com/maps?q=${RIAD.latitude},${RIA
   RIAD.name,
 )})&z=18&hl=fr&output=embed`;
 
-/** Types de chambres proposés à la réservation. */
+/** Noms des chambres proposés à la réservation (FR/EN). */
 export const ROOM_TYPES = [
-  { key: "single", fr: "Chambre simple", en: "Single room" },
-  { key: "double", fr: "Chambre double", en: "Double room" },
-  { key: "triple", fr: "Chambre triple", en: "Triple room" },
+  { key: "andalouse", fr: "Chambre Andalouse", en: "Andalouse Room" },
+  { key: "atlas", fr: "Chambre Atlas", en: "Atlas Room" },
+  { key: "zellige", fr: "Chambre Zellige", en: "Zellige Room" },
+  { key: "moucharabieh", fr: "Suite Moucharabieh", en: "Moucharabieh Suite" },
+  { key: "menara", fr: "Chambre Menara", en: "Menara Room" },
 ] as const;
 
 /** Distances vérifiables depuis le riad (clé = identifiant, texte traduit dans i18n). */
