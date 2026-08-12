@@ -5,9 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Riad Dar Medina Land — design system "Noir & Or".
- * Deep black (#0B0B0B / #111111), ivory (#F5F1E8), gold accent (#C6A15B → #D4AF37).
- * All colors are oklch tokens. Never hardcode colors in components.
+ * Riad Dar Medina Land — design system "Patio bleu".
+ * Bleu majorelle/cobalt (#1E7FCC, deep #0F5FA6), crème (#FBF8F2),
+ * terracotta (#C94C3C), vert végétal (#5A8F4E).
+ * Legacy token names (gold/ink/ivory) are aliased to the new palette.
+ * Never hardcode colors in components.
  */
 
 @theme inline {
@@ -32,6 +34,11 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-cobalt: var(--cobalt);
+  --color-cobalt-deep: var(--cobalt-deep);
+  --color-terracotta: var(--terracotta);
+  --color-olive: var(--olive);
+  /* aliases historiques */
   --color-gold: var(--gold);
   --color-gold-bright: var(--gold-bright);
   --color-gold-dim: var(--gold-dim);
@@ -47,7 +54,7 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --shadow-gold: var(--shadow-gold-soft);
+  --shadow-gold: var(--shadow-cobalt-soft);
   --shadow-frame: var(--shadow-frame-deep);
 }
 
@@ -57,49 +64,64 @@
   --font-serif-display: "Cormorant Garamond", "Playfair Display", ui-serif, Georgia, serif;
   --font-body-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Noir profond */
-  --background: oklch(0.145 0.002 60);
-  --foreground: oklch(0.94 0.012 85);
-  --ink: oklch(0.145 0.002 60);
-  --ink-soft: oklch(0.19 0.003 60);
+  /* Bleu majorelle / cobalt */
+  --cobalt: oklch(0.585 0.148 249);
+  --cobalt-deep: oklch(0.468 0.135 251);
+  --cobalt-soft: oklch(0.585 0.148 249 / 28%);
 
-  /* Ivoire */
-  --ivory: oklch(0.955 0.018 88);
-  --ivory-foreground: oklch(0.2 0.005 60);
+  /* Terracotta & vert végétal */
+  --terracotta: oklch(0.552 0.152 32);
+  --terracotta-deep: oklch(0.478 0.148 32);
+  --olive: oklch(0.575 0.106 138);
 
-  --card: oklch(0.19 0.003 60);
-  --card-foreground: oklch(0.94 0.012 85);
-  --popover: oklch(0.19 0.003 60);
-  --popover-foreground: oklch(0.94 0.012 85);
+  /* Fonds crème / blanc */
+  --background: oklch(0.977 0.011 90);
+  --foreground: oklch(0.255 0.021 252);
+  --ink: oklch(0.977 0.011 90);
+  --ink-soft: oklch(0.951 0.019 89);
+  --on-dark: oklch(0.99 0.005 90);
+  --on-primary: oklch(0.99 0.005 90);
 
-  /* Or */
-  --gold: oklch(0.74 0.088 82);
-  --gold-bright: oklch(0.81 0.115 85);
-  --gold-dim: oklch(0.74 0.088 82 / 35%);
-  --primary: oklch(0.74 0.088 82);
-  --primary-foreground: oklch(0.145 0.002 60);
+  --ivory: oklch(1 0 0);
+  --ivory-foreground: oklch(0.255 0.021 252);
 
-  --secondary: oklch(0.23 0.004 60);
-  --secondary-foreground: oklch(0.94 0.012 85);
-  --muted: oklch(0.23 0.004 60);
-  --muted-foreground: oklch(0.7 0.012 85);
-  --accent: oklch(0.26 0.008 70);
-  --accent-foreground: oklch(0.94 0.012 85);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0.003 85);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.255 0.021 252);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.255 0.021 252);
 
-  --border: oklch(0.74 0.088 82 / 22%);
-  --input: oklch(0.74 0.088 82 / 30%);
-  --ring: oklch(0.74 0.088 82 / 55%);
+  --primary: var(--cobalt);
+  --primary-foreground: var(--on-primary);
 
-  --gradient-gold: linear-gradient(
+  /* alias : l'ancien « or » est désormais bleu cobalt */
+  --gold: var(--cobalt);
+  --gold-bright: var(--cobalt-deep);
+  --gold-dim: var(--cobalt-soft);
+
+  --secondary: oklch(0.94 0.018 90);
+  --secondary-foreground: oklch(0.255 0.021 252);
+  --muted: oklch(0.94 0.018 90);
+  --muted-foreground: oklch(0.47 0.021 252);
+  --accent: oklch(0.93 0.03 240);
+  --accent-foreground: oklch(0.255 0.021 252);
+  --destructive: var(--terracotta);
+  --destructive-foreground: oklch(0.99 0.005 90);
+
+  --border: oklch(0.585 0.148 249 / 24%);
+  --input: oklch(0.585 0.148 249 / 32%);
+  --ring: oklch(0.585 0.148 249 / 55%);
+
+  --gradient-cobalt: linear-gradient(
     100deg,
-    oklch(0.68 0.07 78),
-    oklch(0.85 0.12 88),
-    oklch(0.7 0.08 80)
+    var(--cobalt-deep),
+    var(--cobalt),
+    var(--cobalt-deep)
   );
-  --shadow-gold-soft: 0 0 0 1px oklch(0.74 0.088 82 / 30%), 0 18px 50px -24px oklch(0.74 0.088 82 / 45%);
-  --shadow-frame-deep: 0 30px 80px -40px oklch(0 0 0 / 85%);
+  --shadow-cobalt-soft: 0 0 0 1px oklch(0.585 0.148 249 / 28%), 0 18px 50px -24px oklch(0.585 0.148 249 / 45%);
+  --shadow-frame-deep: 0 24px 60px -34px oklch(0.255 0.021 252 / 30%);
+
+  /* Texture zellige bleu & blanc */
+  --zellige-tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%231E7FCC' stroke-width='1.1'%3E%3Cpath d='M30 2 36 12 48 8 44 20 56 26 44 32 48 44 36 40 30 52 24 40 12 44 16 32 4 26 16 20 12 8 24 12z'/%3E%3Ccircle cx='30' cy='27' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 @layer base {
@@ -129,13 +151,13 @@
   }
 
   ::selection {
-    background: var(--gold);
-    color: var(--ink);
+    background: var(--cobalt);
+    color: var(--on-primary);
   }
 }
 
 @utility text-gold-gradient {
-  background: var(--gradient-gold);
+  background: var(--gradient-cobalt);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -147,12 +169,28 @@
   font-weight: 400;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--cobalt);
 }
 
 @utility hairline {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  background: linear-gradient(90deg, transparent, var(--cobalt-soft), transparent);
+}
+
+/* Texture zellige en fond de section */
+@utility zellige-pattern {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--zellige-tile);
+    background-size: 60px 60px;
+    opacity: 0.07;
+    pointer-events: none;
+  }
 }
 
 @utility btn-gold {
@@ -161,8 +199,8 @@
   justify-content: center;
   gap: 0.6rem;
   padding: 0.95rem 2rem;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid var(--cobalt);
+  color: var(--cobalt);
   background: transparent;
   font-size: 0.75rem;
   font-weight: 400;
@@ -170,14 +208,16 @@
   text-transform: uppercase;
   transition:
     background-color 0.4s ease,
+    border-color 0.4s ease,
     color 0.4s ease,
     box-shadow 0.4s ease;
 }
 @utility btn-gold-hover {
   &:hover {
-    background: var(--gold);
-    color: var(--ink);
-    box-shadow: var(--shadow-gold-soft);
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+    color: var(--on-primary);
+    box-shadow: none;
   }
 }
 
@@ -187,20 +227,21 @@
   justify-content: center;
   gap: 0.6rem;
   padding: 0.95rem 2rem;
-  border: 1px solid var(--gold);
-  background: var(--gold);
-  color: var(--ink);
+  border: 1px solid var(--cobalt);
+  background: var(--cobalt);
+  color: var(--on-primary);
   font-size: 0.75rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   transition:
     background-color 0.4s ease,
+    border-color 0.4s ease,
     color 0.4s ease,
     box-shadow 0.4s ease;
   &:hover {
-    background: transparent;
-    color: var(--gold);
-    box-shadow: var(--shadow-gold-soft);
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+    color: var(--on-primary);
   }
 }
 
