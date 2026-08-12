@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import petitDejeuner from "@/assets/petit-dejeuner.jpg";
+import { petitDejeuner } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";

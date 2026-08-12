@@ -1,10 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroPatio from "@/assets/hero-patio.jpg";
-import chambreAtlas from "@/assets/chambre-vue-montagne.jpg";
-import spaHammam from "@/assets/spa-hammam.jpg";
-import detailZellige from "@/assets/detail-zellige.jpg";
-import terrasse from "@/assets/terrasse-medina.jpg";
-import petitDejeuner from "@/assets/petit-dejeuner.jpg";
+import { heroPatio, chambreAtlas, spaHammam, detailZellige, terrasse, petitDejeuner } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";

@@ -1,10 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Eye, Bath, Tag } from "lucide-react";
-import chambreAtlas from "@/assets/chambre-vue-montagne.jpg";
-import detailZellige from "@/assets/detail-zellige.jpg";
-import terrasse from "@/assets/terrasse-medina.jpg";
-import heroPatio from "@/assets/hero-patio.jpg";
-import spaHammam from "@/assets/spa-hammam.jpg";
+import { chambreAtlas, detailZellige, terrasse, heroPatio, spaHammam } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
