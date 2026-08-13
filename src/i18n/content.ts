@@ -524,7 +524,7 @@ const en: typeof fr = {
   },
   footer: {
     tagline:
-      "A traditional 11-room riad with spa in the Marrakech Medina, less than 2 km from the Saadian Tombs.",
+      "A traditional 8-room riad with spa in the Marrakech Medina, less than 2 km from the Saadian Tombs.",
     navTitle: "Navigation",
     contactTitle: "Contact",
     legalTitle: "Information",
