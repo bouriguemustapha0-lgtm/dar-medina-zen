@@ -205,7 +205,7 @@ const fr = {
       },
       {
         q: "Y a-t-il un hammam et un spa dans le riad ?",
-        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (11).",
+        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (8).",
       },
       {
         q: "Le petit-déjeuner est-il inclus et que comprend-il ?",
