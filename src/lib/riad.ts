@@ -27,6 +27,12 @@ export const fullAddressEn = `${RIAD.street}, ${RIAD.postalCode} ${RIAD.city}, M
 export const whatsappLink = (message: string) =>
   `https://wa.me/${RIAD.whatsapp}?text=${encodeURIComponent(message)}`;
 
+/** Lien mailto pré-rempli vers l'adresse du riad. */
+export const mailtoLink = (subject: string, body: string) =>
+  `mailto:${RIAD.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+
+
 export const mapsLink =
   "https://www.google.com/maps/search/?api=1&query=" +
   encodeURIComponent(`${RIAD.name}, ${RIAD.street}, ${RIAD.city}`);
