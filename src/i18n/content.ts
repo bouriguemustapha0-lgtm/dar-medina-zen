@@ -476,7 +476,7 @@ const en: typeof fr = {
       },
       {
         q: "Is there a hammam and spa inside the riad?",
-        a: "Yes, the riad has an on-site wellness centre with a traditional hammam. Treatments are booked with reception, preferably the day before, as slots are limited by the number of rooms (11).",
+        a: "Yes, the riad has an on-site wellness centre with a traditional hammam. Treatments are booked with reception, preferably the day before, as slots are limited by the number of rooms (8).",
       },
       {
         q: "Is breakfast included and what does it consist of?",
