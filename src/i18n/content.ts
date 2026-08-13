@@ -301,7 +301,7 @@ const en: typeof fr = {
     heroEyebrow: "Marrakech Medina · Guest house",
     heroTitle: "Eight rooms around a Medina patio",
     heroLead:
-      "Riad Dar Medina Land is a traditional 11-room riad at 72 Issebtienne, Rue Derb Jdid, in the Marrakech Medina, less than 2 km from the Saadian Tombs and about a 25-minute walk from the Jardin Majorelle.",
+      "Riad Dar Medina Land is a traditional 8-room riad at 72 Issebtienne, Rue Derb Jdid, in the Marrakech Medina, less than 2 km from the Saadian Tombs and about a 25-minute walk from the Jardin Majorelle.",
     introEyebrow: "The riad",
     introTitle: "A Moroccan house, not a hotel",
     introParagraphs: [
