@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Riad Dar Medina Land : 8 chambres, spa, patio traditionnel, Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens.",
+          "Riad Dar Medina Land : 11 chambres, spa, patio traditionnel, Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens.",
       },
       { name: "author", content: "Riad Dar Medina Land" },
       { name: "theme-color", content: "#0B0B0B" },
