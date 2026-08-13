@@ -468,7 +468,7 @@ const en: typeof fr = {
       },
       {
         q: "Do you offer transfers from Marrakech-Menara airport?",
-        a: "Yes. A private transfer from Marrakech-Menara airport, about 6 km away, can be arranged on request. The driver drops guests at the entrance of the derb and a team member carries the luggage to the door.",
+        a: "Yes. A private transfer from Marrakech-Menara airport, about 6 km away (20 $), can be arranged on request. The driver drops guests at the entrance of the derb and a team member carries the luggage to the door.",
       },
       {
         q: "How do I pay for my stay?",
