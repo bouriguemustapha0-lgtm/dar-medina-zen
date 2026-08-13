@@ -15,7 +15,7 @@ const fr = {
   cta: {
     book: "Réserver",
     bookWhatsapp: "Réserver sur WhatsApp",
-    discoverRooms: "Découvrir les 11 chambres",
+    discoverRooms: "Découvrir les 8 chambres",
     seeLocation: "Voir la localisation",
     call: "Appeler le riad",
     viewAll: "Tout voir",
@@ -26,22 +26,22 @@ const fr = {
   home: {
     title: "Riad Dar Medina Land — Riad de luxe dans la Médina de Marrakech",
     description:
-      "Riad de charme à Marrakech : 11 chambres, spa sur place, patio traditionnel, à moins de 2 km des Tombeaux Saadiens. Adresse intimiste au cœur de la Médina.",
+      "Riad de charme à Marrakech : 8 chambres, spa sur place, patio traditionnel, à moins de 2 km des Tombeaux Saadiens. Adresse intimiste au cœur de la Médina.",
     heroEyebrow: "Médina de Marrakech · Maison d'hôtes",
-    heroTitle: "Onze chambres autour d'un patio de la Médina",
+    heroTitle: "Huit chambres autour d'un patio de la Médina",
     heroLead:
-      "Riad Dar Medina Land est un riad traditionnel de 11 chambres situé au 72 Issebtienne, Rue Derb Jdid, dans la Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens et à environ 25 minutes à pied du Jardin Majorelle.",
+      "Riad Dar Medina Land est un riad traditionnel de 8 chambres situé au 72 Issebtienne, Rue Derb Jdid, dans la Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens et à environ 25 minutes à pied du Jardin Majorelle.",
     introEyebrow: "Le riad",
     introTitle: "Une maison marocaine, pas un hôtel",
     introParagraphs: [
       "Dar Medina Land est une maison traditionnelle organisée autour d'un patio central : les chambres s'ouvrent vers l'intérieur, les portes en cèdre sculpté et les zelliges posés à la main rythment les circulations, et le bruit des souks disparaît dès que la porte cloutée se referme.",
-      "La maison compte 11 chambres, dont plusieurs offrent une vue sur les montagnes de l'Atlas. Ce format volontairement réduit permet un service personnalisé : l'équipe connaît le prénom de chaque hôte, organise les transferts et indique les ruelles les plus courtes vers la place Jemaa el-Fna.",
+      "La maison compte 8 chambres, dont plusieurs offrent une vue sur les montagnes de l'Atlas. Ce format volontairement réduit permet un service personnalisé : l'équipe connaît le prénom de chaque hôte, organise les transferts et indique les ruelles les plus courtes vers la place Jemaa el-Fna.",
       "L'adresse se trouve dans la Médina historique, à proximité immédiate du Palais Bahia, à 650 m de la Maison de la Photographie de Marrakech et à 200 m du Café Snack Chinguitti.",
     ],
     factsTitle: "L'essentiel en un coup d'œil",
     facts: [
       { label: "Type d'établissement", value: "Riad traditionnel avec patio" },
-      { label: "Chambres", value: "11 chambres, certaines avec vue montagne" },
+      { label: "Chambres", value: "8 chambres, certaines avec vue montagne" },
       { label: "Quartier", value: "Médina de Marrakech, 40000" },
       { label: "Bien-être", value: "Centre de bien-être / spa sur place" },
       { label: "Petit-déjeuner", value: "Continental : crêpes, fruits frais, fromage" },
@@ -74,7 +74,7 @@ const fr = {
       },
       {
         title: "Conciergerie",
-        text: "Transferts aéroport (15 km de l'aéroport Marrakech-Ménara), réservation de guides et de tables, dépôt de bagages.",
+        text: "Transferts aéroport (6 km, 20 $), réservation de guides et de tables, dépôt de bagages.",
       },
     ],
     reviewsEyebrow: "Avis clients",
@@ -95,18 +95,18 @@ const fr = {
       {
         author: "Sarah M.",
         origin: "Londres, Royaume-Uni",
-        text: "Onze chambres seulement : on se sent dans une maison, pas dans un hôtel. Le hammam du riad après une journée dans les souks vaut le détour.",
+        text: "Huit chambres seulement : on se sent dans une maison, pas dans un hôtel. Le hammam du riad après une journée dans les souks vaut le détour.",
         rating: 4,
       },
     ],
   },
   rooms: {
-    title: "Chambres du Riad Dar Medina Land — 11 chambres, Médina Marrakech",
+    title: "Chambres du Riad Dar Medina Land — 8 chambres, Médina Marrakech",
     description:
-      "Les 11 chambres du Riad Dar Medina Land à Marrakech : vue montagne, baignoire spa, toilette séparée, sèche-cheveux et draps de bain fournis.",
+      "Les 8 chambres du Riad Dar Medina Land à Marrakech : vue montagne, baignoire spa, toilette séparée, sèche-cheveux et draps de bain fournis.",
     eyebrow: "Hébergement",
-    heading: "Onze chambres, cinq caractères",
-    lead: "Le riad compte 11 chambres réparties sur deux niveaux autour du patio. Certaines offrent une vue sur les montagnes de l'Atlas ; toutes disposent d'un sèche-cheveux et de draps de bain fournis. Les tarifs sont communiqués sur demande selon la saison et la durée du séjour.",
+    heading: "Huit chambres, cinq caractères",
+    lead: "Le riad compte 8 chambres réparties sur deux niveaux autour du patio. Certaines offrent une vue sur les montagnes de l'Atlas ; toutes disposent d'un sèche-cheveux et de draps de bain fournis. Les tarifs sont communiqués sur demande selon la saison et la durée du séjour.",
     priceLabel: "Tarif",
     priceValue: "Sur demande",
     viewLabel: "Vue",
@@ -197,7 +197,7 @@ const fr = {
       },
       {
         q: "Proposez-vous des transferts depuis l'aéroport de Marrakech-Ménara ?",
-        a: "Oui. Un transfert privé depuis l'aéroport Marrakech-Ménara, situé à environ 15 minutes en voiture, peut être organisé sur demande. Le chauffeur dépose les hôtes à l'entrée du derb et un membre de l'équipe porte les bagages jusqu'à la porte.",
+        a: "Oui. Un transfert privé depuis l'aéroport Marrakech-Ménara, situé à environ 6 km (20 $), peut être organisé sur demande. Le chauffeur dépose les hôtes à l'entrée du derb et un membre de l'équipe porte les bagages jusqu'à la porte.",
       },
       {
         q: "Comment régler son séjour ?",
@@ -205,7 +205,7 @@ const fr = {
       },
       {
         q: "Y a-t-il un hammam et un spa dans le riad ?",
-        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (11).",
+        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (8).",
       },
       {
         q: "Le petit-déjeuner est-il inclus et que comprend-il ?",
@@ -213,7 +213,7 @@ const fr = {
       },
       {
         q: "Certaines chambres ont-elles une vue sur les montagnes ?",
-        a: "Oui. Sur les 11 chambres du riad, plusieurs chambres d'étage offrent une vue sur les montagnes de l'Atlas ; précisez votre préférence lors de la demande de réservation, sous réserve de disponibilité.",
+        a: "Oui. Sur les 8 chambres du riad, plusieurs chambres d'étage offrent une vue sur les montagnes de l'Atlas ; précisez votre préférence lors de la demande de réservation, sous réserve de disponibilité.",
       },
       {
         q: "Le riad est-il accessible en voiture ?",
@@ -221,7 +221,7 @@ const fr = {
       },
       {
         q: "Peut-on privatiser le riad entier ?",
-        a: "Oui, les 11 chambres peuvent être réservées ensemble pour un mariage, un séminaire ou une réunion de famille. Contactez-nous par WhatsApp au " + RIAD.phoneDisplay + " pour un devis.",
+        a: "Oui, les 8 chambres peuvent être réservées ensemble pour un mariage, un séminaire ou une réunion de famille. Contactez-nous par WhatsApp au " + RIAD.phoneDisplay + " pour un devis.",
       },
     ],
   },
@@ -253,7 +253,7 @@ const fr = {
   },
   footer: {
     tagline:
-      "Riad traditionnel de 11 chambres avec spa, dans la Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens.",
+      "Riad traditionnel de 8 chambres avec spa, dans la Médina de Marrakech, à moins de 2 km des Tombeaux Saadiens.",
     navTitle: "Navigation",
     contactTitle: "Contact",
     legalTitle: "Informations",
@@ -286,7 +286,7 @@ const en: typeof fr = {
   cta: {
     book: "Book",
     bookWhatsapp: "Book on WhatsApp",
-    discoverRooms: "Discover the 11 rooms",
+    discoverRooms: "Discover the 8 rooms",
     seeLocation: "See the location",
     call: "Call the riad",
     viewAll: "View all",
@@ -297,22 +297,22 @@ const en: typeof fr = {
   home: {
     title: "Riad Dar Medina Land — Luxury Riad in the Marrakech Medina",
     description:
-      "Boutique riad in Marrakech: 11 rooms, on-site spa, traditional patio, less than 2 km from the Saadian Tombs. An intimate address in the heart of the Medina.",
+      "Boutique riad in Marrakech: 8 rooms, on-site spa, traditional patio, less than 2 km from the Saadian Tombs. An intimate address in the heart of the Medina.",
     heroEyebrow: "Marrakech Medina · Guest house",
-    heroTitle: "Eleven rooms around a Medina patio",
+    heroTitle: "Eight rooms around a Medina patio",
     heroLead:
-      "Riad Dar Medina Land is a traditional 11-room riad at 72 Issebtienne, Rue Derb Jdid, in the Marrakech Medina, less than 2 km from the Saadian Tombs and about a 25-minute walk from the Jardin Majorelle.",
+      "Riad Dar Medina Land is a traditional 8-room riad at 72 Issebtienne, Rue Derb Jdid, in the Marrakech Medina, less than 2 km from the Saadian Tombs and about a 25-minute walk from the Jardin Majorelle.",
     introEyebrow: "The riad",
     introTitle: "A Moroccan house, not a hotel",
     introParagraphs: [
       "Dar Medina Land is a traditional house built around a central patio: the rooms open inwards, hand-cut zellige and carved cedar doors line the passageways, and the noise of the souks disappears the moment the studded door closes.",
-      "The house has 11 rooms, several of which look out onto the Atlas mountains. That deliberately small scale allows personal service: the team knows every guest by name, arranges transfers and points out the shortest lanes to Jemaa el-Fna square.",
+      "The house has 8 rooms, several of which look out onto the Atlas mountains. That deliberately small scale allows personal service: the team knows every guest by name, arranges transfers and points out the shortest lanes to Jemaa el-Fna square.",
       "The address sits in the historic Medina, close to the Bahia Palace, 650 m from the Maison de la Photographie de Marrakech and 200 m from Café Snack Chinguitti.",
     ],
     factsTitle: "Key facts at a glance",
     facts: [
       { label: "Property type", value: "Traditional riad with patio" },
-      { label: "Rooms", value: "11 rooms, some with mountain views" },
+      { label: "Rooms", value: "8 rooms, some with mountain views" },
       { label: "District", value: "Marrakech Medina, 40000" },
       { label: "Wellness", value: "On-site wellness centre / spa" },
       { label: "Breakfast", value: "Continental: pancakes, fresh fruit, cheese" },
@@ -345,7 +345,7 @@ const en: typeof fr = {
       },
       {
         title: "Concierge",
-        text: "Airport transfers (15 km from Marrakech-Menara airport), guides and restaurant bookings, luggage storage.",
+        text: "Airport transfers (6 km, 20 $), guides and restaurant bookings, luggage storage.",
       },
     ],
     reviewsEyebrow: "Guest reviews",
@@ -366,18 +366,18 @@ const en: typeof fr = {
       {
         author: "Sarah M.",
         origin: "London, United Kingdom",
-        text: "Only eleven rooms: it feels like a house, not a hotel. The riad hammam after a day in the souks is worth it on its own.",
+        text: "Only eight rooms: it feels like a house, not a hotel. The riad hammam after a day in the souks is worth it on its own.",
         rating: 4,
       },
     ],
   },
   rooms: {
-    title: "Rooms at Riad Dar Medina Land — 11 rooms, Marrakech Medina",
+    title: "Rooms at Riad Dar Medina Land — 8 rooms, Marrakech Medina",
     description:
-      "The 11 rooms of Riad Dar Medina Land in Marrakech: mountain views, spa bath, separate toilet, hairdryer and bath towels provided.",
+      "The 8 rooms of Riad Dar Medina Land in Marrakech: mountain views, spa bath, separate toilet, hairdryer and bath towels provided.",
     eyebrow: "Accommodation",
-    heading: "Eleven rooms, five characters",
-    lead: "The riad has 11 rooms over two floors around the patio. Several look out onto the Atlas mountains; all include a hairdryer and bath towels. Rates are given on request depending on season and length of stay.",
+    heading: "Eight rooms, five characters",
+    lead: "The riad has 8 rooms over two floors around the patio. Several look out onto the Atlas mountains; all include a hairdryer and bath towels. Rates are given on request depending on season and length of stay.",
     priceLabel: "Rate",
     priceValue: "On request",
     viewLabel: "View",
@@ -468,7 +468,7 @@ const en: typeof fr = {
       },
       {
         q: "Do you offer transfers from Marrakech-Menara airport?",
-        a: "Yes. A private transfer from Marrakech-Menara airport, about 15 minutes away by car, can be arranged on request. The driver drops guests at the entrance of the derb and a team member carries the luggage to the door.",
+        a: "Yes. A private transfer from Marrakech-Menara airport, about 6 km away (20 $), can be arranged on request. The driver drops guests at the entrance of the derb and a team member carries the luggage to the door.",
       },
       {
         q: "How do I pay for my stay?",
@@ -476,7 +476,7 @@ const en: typeof fr = {
       },
       {
         q: "Is there a hammam and spa inside the riad?",
-        a: "Yes, the riad has an on-site wellness centre with a traditional hammam. Treatments are booked with reception, preferably the day before, as slots are limited by the number of rooms (11).",
+        a: "Yes, the riad has an on-site wellness centre with a traditional hammam. Treatments are booked with reception, preferably the day before, as slots are limited by the number of rooms (8).",
       },
       {
         q: "Is breakfast included and what does it consist of?",
@@ -484,7 +484,7 @@ const en: typeof fr = {
       },
       {
         q: "Do some rooms have mountain views?",
-        a: "Yes. Among the riad's 11 rooms, several upper-floor rooms look out onto the Atlas mountains; state your preference when requesting a booking, subject to availability.",
+        a: "Yes. Among the riad's 8 rooms, several upper-floor rooms look out onto the Atlas mountains; state your preference when requesting a booking, subject to availability.",
       },
       {
         q: "Can the riad be reached by car?",
@@ -492,7 +492,7 @@ const en: typeof fr = {
       },
       {
         q: "Can the whole riad be privatised?",
-        a: "Yes, all 11 rooms can be booked together for a wedding, a retreat or a family gathering. Contact us on WhatsApp at " + RIAD.phoneDisplay + " for a quote.",
+        a: "Yes, all 8 rooms can be booked together for a wedding, a retreat or a family gathering. Contact us on WhatsApp at " + RIAD.phoneDisplay + " for a quote.",
       },
     ],
   },
@@ -524,7 +524,7 @@ const en: typeof fr = {
   },
   footer: {
     tagline:
-      "A traditional 11-room riad with spa in the Marrakech Medina, less than 2 km from the Saadian Tombs.",
+      "A traditional 8-room riad with spa in the Marrakech Medina, less than 2 km from the Saadian Tombs.",
     navTitle: "Navigation",
     contactTitle: "Contact",
     legalTitle: "Information",
