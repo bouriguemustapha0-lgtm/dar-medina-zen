@@ -26,7 +26,7 @@ const fr = {
   home: {
     title: "Riad Dar Medina Land — Riad de luxe dans la Médina de Marrakech",
     description:
-      "Riad de charme à Marrakech : 11 chambres, spa sur place, patio traditionnel, à moins de 2 km des Tombeaux Saadiens. Adresse intimiste au cœur de la Médina.",
+      "Riad de charme à Marrakech : 8 chambres, spa sur place, patio traditionnel, à moins de 2 km des Tombeaux Saadiens. Adresse intimiste au cœur de la Médina.",
     heroEyebrow: "Médina de Marrakech · Maison d'hôtes",
     heroTitle: "Huit chambres autour d'un patio de la Médina",
     heroLead:
@@ -95,7 +95,7 @@ const fr = {
       {
         author: "Sarah M.",
         origin: "Londres, Royaume-Uni",
-        text: "Onze chambres seulement : on se sent dans une maison, pas dans un hôtel. Le hammam du riad après une journée dans les souks vaut le détour.",
+        text: "Huit chambres seulement : on se sent dans une maison, pas dans un hôtel. Le hammam du riad après une journée dans les souks vaut le détour.",
         rating: 4,
       },
     ],
@@ -205,7 +205,7 @@ const fr = {
       },
       {
         q: "Y a-t-il un hammam et un spa dans le riad ?",
-        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (11).",
+        a: "Oui, le riad dispose d'un centre de bien-être sur place avec hammam traditionnel. Les soins se réservent auprès de la réception, de préférence la veille, car les créneaux sont limités par le nombre de chambres (8).",
       },
       {
         q: "Le petit-déjeuner est-il inclus et que comprend-il ?",
@@ -213,7 +213,7 @@ const fr = {
       },
       {
         q: "Certaines chambres ont-elles une vue sur les montagnes ?",
-        a: "Oui. Sur les 11 chambres du riad, plusieurs chambres d'étage offrent une vue sur les montagnes de l'Atlas ; précisez votre préférence lors de la demande de réservation, sous réserve de disponibilité.",
+        a: "Oui. Sur les 8 chambres du riad, plusieurs chambres d'étage offrent une vue sur les montagnes de l'Atlas ; précisez votre préférence lors de la demande de réservation, sous réserve de disponibilité.",
       },
       {
         q: "Le riad est-il accessible en voiture ?",
