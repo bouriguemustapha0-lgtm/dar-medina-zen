@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { EightPointStar } from "@/components/ornaments";
 import { useLang } from "@/i18n/use-lang";
-import { RIAD, ROOM_TYPES, whatsappLink } from "@/lib/riad";
+import { RIAD, ROOM_TYPES, mailtoLink, whatsappLink } from "@/lib/riad";
 
 /** Carte de réservation (fond translucide) : ouvre WhatsApp pré-rempli. */
 export function BookingForm({ className = "" }: { className?: string }) {
@@ -30,7 +30,11 @@ export function BookingForm({ className = "" }: { className?: string }) {
       `${t.contact.form.room}: ${form.room || t.contact.form.roomAny}`,
     ];
     if (form.message) lines.push(`${t.contact.form.message}: ${form.message}`);
-    window.open(whatsappLink(lines.join("\n")), "_blank", "noopener,noreferrer");
+    const body = lines.join("\n");
+    const subject = `${L ? "Booking request" : "Demande de réservation"} — ${RIAD.name}`;
+    window.open(whatsappLink(body), "_blank", "noopener,noreferrer");
+    // La demande est aussi envoyée par email au riad.
+    window.location.href = mailtoLink(subject, body);
   };
 
   const field =
@@ -127,9 +131,16 @@ export function BookingForm({ className = "" }: { className?: string }) {
         </div>
       </div>
 
-      <button type="submit" className="btn-solid-gold arch-pill mt-8 w-full sm:w-auto">
-        {t.cta.bookWhatsapp}
-      </button>
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <button type="submit" className="btn-solid-gold arch-pill w-full sm:w-auto">
+          {t.cta.bookWhatsapp}
+        </button>
+        <p className="text-[0.7rem] uppercase tracking-[0.18em] text-on-dark/70">
+          {lang === "en"
+            ? `Also sent by email to ${RIAD.email}`
+            : `Envoyé aussi par email à ${RIAD.email}`}
+        </p>
+      </div>
     </form>
   );
 }

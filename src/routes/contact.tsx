@@ -5,7 +5,7 @@ import { petitDejeuner } from "@/lib/photos";
 import { SectionTitle } from "@/components/ornaments";
 import { content } from "@/i18n/content";
 import { useLang, validateLangSearch } from "@/i18n/use-lang";
-import { RIAD, ROOM_TYPES, mapsLink, whatsappLink } from "@/lib/riad";
+import { RIAD, ROOM_TYPES, mailtoLink, mapsLink, whatsappLink } from "@/lib/riad";
 import { breadcrumbJsonLd, buildHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
@@ -63,7 +63,11 @@ function ContactPage() {
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    window.open(whatsappLink(buildMessage()), "_blank", "noopener,noreferrer");
+    const body = buildMessage();
+    const subject = `${lang === "en" ? "Booking request" : "Demande de réservation"} — ${RIAD.name}`;
+    window.open(whatsappLink(body), "_blank", "noopener,noreferrer");
+    // La demande est aussi envoyée par email au riad.
+    window.location.href = mailtoLink(subject, body);
   };
 
   const field =
