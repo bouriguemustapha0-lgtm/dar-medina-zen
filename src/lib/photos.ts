@@ -17,6 +17,9 @@ import doublePatioC from "@/assets/chambre-double-patio-c.jpg.asset.json";
 import tripleA from "@/assets/chambre-triple-classique-a.jpg.asset.json";
 import tripleB from "@/assets/chambre-triple-classique-b.jpg.asset.json";
 import tripleC from "@/assets/chambre-triple-classique-c.jpg.asset.json";
+import confortA from "@/assets/chambre-triple-confort-a.jpg.asset.json";
+import confortB from "@/assets/chambre-triple-confort-b.jpg.asset.json";
+import confortC from "@/assets/chambre-triple-confort-c.jpg.asset.json";
 
 export const heroPatio = patio.url;
 export const patioJourPhoto = patioJour.url;
@@ -36,3 +39,6 @@ export const chambreDoublePatioGallery = [doublePatioC.url, doublePatioA.url, do
 
 export const chambreTripleClassiquePhoto = tripleA.url;
 export const chambreTripleClassiqueGallery = [tripleA.url, tripleB.url, tripleC.url];
+
+export const chambreTripleConfortPhoto = confortA.url;
+export const chambreTripleConfortGallery = [confortA.url, confortB.url, confortC.url];
