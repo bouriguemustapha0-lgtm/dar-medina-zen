@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { useLang } from "@/i18n/use-lang";
 import { RIAD, whatsappLink } from "@/lib/riad";
+import logoAsset from "@/assets/logo.jpeg.asset.json";
 import { EightPointStar } from "./ornaments";
 
 const LINKS = [
@@ -42,7 +43,12 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
         <Link to="/" search={search} className="group flex items-center gap-3">
-          <EightPointStar className={`h-6 w-6 ${accent} transition-transform duration-700 group-hover:rotate-45`} />
+          <img
+            src={logoAsset.url}
+            alt={`${RIAD.name} — logo`}
+            className="h-12 w-auto rounded-sm object-contain"
+            loading="eager"
+          />
           <span className="leading-tight">
             <span className={`block font-display text-lg tracking-wide ${tone} sm:text-xl`}>
               Riad Dar Medina Land
