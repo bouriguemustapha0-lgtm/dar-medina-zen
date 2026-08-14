@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import { useLang } from "@/i18n/use-lang";
 import { RIAD, mapsLink, whatsappLink } from "@/lib/riad";
+import logoAsset from "@/assets/logo.jpeg.asset.json";
 import { Divider } from "./ornaments";
 
 const LINKS = [
@@ -21,7 +22,12 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-2xl text-foreground">Riad Dar Medina Land</p>
+            <img
+              src={logoAsset.url}
+              alt={`${RIAD.name} — logo`}
+              className="h-14 w-auto rounded-sm object-contain"
+              loading="lazy"
+            />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">{t.footer.tagline}</p>
             <div className="mt-6 flex gap-4">
               <a
