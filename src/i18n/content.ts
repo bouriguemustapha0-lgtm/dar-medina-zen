@@ -114,12 +114,14 @@ const fr = {
     sizeLabel: "Superficie",
     bedsLabel: "Lits",
     amenitiesLabel: "Équipements",
+    learnMore: "En savoir plus",
+    showLess: "Réduire",
     items: {
       andalouse: {
         name: "Chambre Double avec Terrasse",
         view: "Terrasse privative",
         bath: "Salle de bains privative : baignoire balnéo, douche ou baignoire, bidet, toilettes supplémentaires, sèche-cheveux, papier toilette",
-        text: "Chambre double climatisée de 12 m² avec terrasse, dotée d'une salle de bains privative équipée d'une baignoire balnéo et d'un bidet. Elle dispose d'un lit double. Lits confortables, notés 7,6 d'après 136 commentaires.",
+        text: "Poussez la porte : 12 m² baignés de lumière, des zelliges jusqu'au plafond et votre propre terrasse pour le thé du soir. La baignoire balnéo attend le retour des souks, la climatisation fait le reste. Lits notés 7,6 par 136 voyageurs.",
         size: "12 m²",
         beds: "1 lit double",
         amenities: [
@@ -137,7 +139,7 @@ const fr = {
         name: "Chambre Double avec Patio",
         view: "Terrasse, vue sur la montagne et sur la cour intérieure",
         bath: "Salle de bains privative : baignoire, baignoire balnéo, douche, bidet, toilettes, toilettes supplémentaires, articles de toilette gratuits, peignoir, chaussons, sèche-cheveux, papier toilette",
-        text: "Chambre double climatisée de 12 m² avec terrasse offrant une vue sur la montagne et sur la cour intérieure. Elle comprend un coin repas, un chauffage, une salle de bains privative avec baignoire, douche et bidet, ainsi que des articles de toilette gratuits et des peignoirs. Elle dispose d'un lit double. Lits confortables, notés 7,6 d'après 136 commentaires. Chambre non-fumeurs.",
+        text: "Le patio d'un côté, les cimes de l'Atlas de l'autre : cette chambre de 12 m² vous offre les deux depuis sa terrasse privée. Coin repas, peignoirs moelleux, baignoire balnéo et douche — une adresse pour rester un peu plus longtemps. Non-fumeurs.",
         size: "12 m²",
         beds: "1 lit double",
         amenities: [
@@ -162,7 +164,7 @@ const fr = {
         name: "Chambre Triple Classique",
         view: "Chambre sur la maison",
         bath: "Salle de bains privative : baignoire, papier toilette",
-        text: "Chambre triple climatisée de 12 m² avec salle de bains privative dotée d'une baignoire. Elle dispose de 2 lits doubles. Lits confortables, notés 7,6 d'après 136 commentaires. Chambre non-fumeurs.",
+        text: 'Faite pour voyager à trois : 12 m², deux grands lits doubles, murs de zellige et une vraie baignoire pour dénouer la journée. Simple, fraîche, climatisée, à deux pas de Jemaa el-Fna. Non-fumeurs.',
         size: "12 m²",
         beds: "2 lits doubles",
         amenities: [
@@ -180,7 +182,7 @@ const fr = {
         name: "Chambre Triple Confort",
         view: "Chambre sur la maison",
         bath: "Salle de bains privative : baignoire, papier toilette",
-        text: "Chambre triple climatisée de 12 m² avec salle de bains privative dotée d'une baignoire. Elle dispose de 2 lits doubles. Lits confortables, notés 7,6 d'après 136 commentaires. Chambre non-fumeurs.",
+        text: "Murs vert menthe, banquette rouge et tapis berbères : la plus chaleureuse de nos triples. 12 m², deux lits doubles, baignoire privative et climatisation pour des siestes de milieu d'après-midi. Non-fumeurs.",
         size: "12 m²",
         beds: "2 lits doubles",
         amenities: [
@@ -198,7 +200,7 @@ const fr = {
         name: "Chambre Double",
         view: "Terrasse, vue sur la montagne et sur la cour intérieure",
         bath: "Salle de bains privative : baignoire, baignoire balnéo, douche, bidet, toilettes, toilettes supplémentaires, articles de toilette gratuits, peignoir, chaussons, sèche-cheveux, papier toilette",
-        text: "Chambre double climatisée de 10 m² avec terrasse offrant une vue sur la montagne et sur la cour intérieure. Elle comprend un coin repas, un chauffage et une salle de bains privative avec baignoire, douche et bidet, ainsi que des articles de toilette gratuits et des peignoirs. Elle dispose d'un lit double. Lits confortables, notés 7,6 d'après 136 commentaires.",
+        text: 'Un nid de 10 m² qui ouvre sur sa terrasse : vue montagne, vue patio, et le silence de la médina. Peignoirs, articles de toilette, coin repas et baignoire balnéo — le petit luxe discret des voyageurs à deux.',
         size: "10 m²",
         beds: "1 lit double",
         amenities: [
@@ -222,7 +224,7 @@ const fr = {
         name: "Chambre Simple",
         view: "Chambre sur le riad",
         bath: "Salle de bains privative : baignoire, papier toilette",
-        text: "Chambre simple climatisée de 6 m² avec salle de bains privative équipée d'une baignoire. Ce logement comporte 1 lit simple. Lits confortables, notés 7,6 d'après 136 commentaires.",
+        text: "Compacte et lumineuse, 6 m² pensés pour l'essentiel : un lit douillet, des zelliges bleus, la climatisation et une salle de bains privative avec baignoire. La médina commence derrière votre porte.",
         size: "6 m²",
         beds: "1 lit simple",
         amenities: [
@@ -239,7 +241,7 @@ const fr = {
         name: "Suite Deluxe",
         view: "Suite privée avec salon séparé",
         bath: "Salle de bains privative : baignoire balnéo, douche ou baignoire, bidet, sèche-cheveux, toilettes supplémentaires, papier toilette",
-        text: "Suite climatisée de 12 m² composée d'un salon, d'une chambre séparée et d'une salle de bains avec baignoire. Le logement comporte 2 lits : 1 lit double dans la chambre et 1 canapé-lit au salon. Lits confortables, notés 7,6 d'après 136 commentaires.",
+        text: "Notre plus bel espace : un salon à vous, une chambre séparée derrière sa porte, 12 m² habillés de zellige et d'artisanat marocain. Canapé-lit pour un troisième voyageur, baignoire balnéo pour finir la journée en douceur.",
         size: "12 m²",
         beds: "Chambre 1 : 1 lit double · Salon : 1 canapé-lit",
         amenities: [
@@ -496,12 +498,14 @@ const en: typeof fr = {
     sizeLabel: "Size",
     bedsLabel: "Beds",
     amenitiesLabel: "Amenities",
+    learnMore: "Learn more",
+    showLess: "Show less",
     items: {
       andalouse: {
         name: "Double Room with Terrace",
         view: "Private terrace",
         bath: "Private bathroom: whirlpool bath, shower or bath, bidet, extra toilet, hairdryer, toilet paper",
-        text: "Air-conditioned double room of 12 m² with a terrace, featuring a private bathroom equipped with a bath and a bidet. The unit offers 1 double bed. Comfortable beds, rated 7.6 from 136 reviews.",
+        text: 'Push the door open: 12 m² full of light, zellige tiles up to the ceiling and your own terrace for evening tea. The spa bath is waiting after the souks, the air conditioning does the rest. Beds rated 7.6 by 136 travellers.',
         size: "12 m²",
         beds: "1 double bed",
         amenities: [
@@ -519,7 +523,7 @@ const en: typeof fr = {
         name: "Double Room with Patio",
         view: "Terrace, mountain view and inner courtyard view",
         bath: "Private bathroom: bath, whirlpool bath, shower, bidet, toilet, extra toilet, free toiletries, bathrobe, slippers, hairdryer, toilet paper",
-        text: "Air-conditioned double room of 12 m² with a terrace overlooking the mountains and the inner courtyard. It includes a dining area, heating and a private bathroom with a bath, a shower and a bidet, plus free toiletries and bathrobes. The unit has 1 double bed. Comfortable beds, rated 7.6 from 136 reviews. Non-smoking room.",
+        text: "The patio on one side, the Atlas peaks on the other — this 12 m² room gives you both from its private terrace. Dining nook, soft bathrobes, spa bath and shower: an address you'll want to stretch out. Non-smoking.",
         size: "12 m²",
         beds: "1 double bed",
         amenities: [
@@ -544,7 +548,7 @@ const en: typeof fr = {
         name: "Classic Triple Room",
         view: "Room inside the house",
         bath: "Private bathroom: bath, toilet paper",
-        text: "Air-conditioned triple room of 12 m² with a private bathroom boasting a bath. The unit has 2 double beds. Comfortable beds, rated 7.6 from 136 reviews. Non-smoking room.",
+        text: 'Made for travelling as three: 12 m², two generous double beds, zellige walls and a real bathtub to unwind the day. Simple, cool, air-conditioned, minutes from Jemaa el-Fna. Non-smoking.',
         size: "12 m²",
         beds: "2 double beds",
         amenities: [
@@ -562,7 +566,7 @@ const en: typeof fr = {
         name: "Comfort Triple Room",
         view: "Room inside the house",
         bath: "Private bathroom: bath, toilet paper",
-        text: "Air-conditioned triple room of 12 m² with a private bathroom boasting a bath. The unit has 2 double beds. Comfortable beds, rated 7.6 from 136 reviews. Non-smoking room.",
+        text: 'Mint-green walls, a red banquette and Berber rugs — the warmest of our triples. 12 m², two double beds, private bath and air conditioning made for mid-afternoon naps. Non-smoking.',
         size: "12 m²",
         beds: "2 double beds",
         amenities: [
@@ -580,7 +584,7 @@ const en: typeof fr = {
         name: "Double Room",
         view: "Terrace, mountain view and inner courtyard view",
         bath: "Private bathroom: bath, whirlpool bath, shower, bidet, toilet, extra toilet, free toiletries, bathrobe, slippers, hairdryer, toilet paper",
-        text: "Air-conditioned double room of 10 m² with a terrace overlooking the mountains and the inner courtyard. It includes a dining area, heating and a private bathroom with a bath, a shower and a bidet, plus free toiletries and bathrobes. The unit has 1 double bed. Comfortable beds, rated 7.6 from 136 reviews.",
+        text: 'A 10 m² nest that opens onto its own terrace: mountain views, patio views and the hush of the medina. Bathrobes, toiletries, dining nook and a spa bath — quiet luxury for two.',
         size: "10 m²",
         beds: "1 double bed",
         amenities: [
@@ -604,7 +608,7 @@ const en: typeof fr = {
         name: "Single Room",
         view: "Room within the riad",
         bath: "Private bathroom: bath, toilet paper",
-        text: "Air-conditioned single room of 6 m² with a private bathroom boasting a bath. The unit has 1 single bed. Comfortable beds, rated 7.6 from 136 reviews.",
+        text: 'Compact and bright, 6 m² built around the essentials: a cosy bed, blue zellige, air conditioning and a private bathroom with a bath. The medina starts right outside your door.',
         size: "6 m²",
         beds: "1 single bed",
         amenities: [
@@ -621,7 +625,7 @@ const en: typeof fr = {
         name: "Deluxe Suite",
         view: "Private suite with separate living room",
         bath: "Private bathroom: spa bath, shower or bath, bidet, hairdryer, additional toilet, toilet paper",
-        text: "Air-conditioned suite of 12 m² comprised of 1 living room, 1 separate bedroom and 1 bathroom with a bath. The unit offers 2 beds: 1 double bed in the bedroom and 1 sofa bed in the living room. Comfortable beds, rated 7.6 from 136 reviews.",
+        text: 'Our finest space: a living room of your own, a bedroom behind its own door, 12 m² dressed in zellige and Moroccan craft. Sofa bed for a third traveller, spa bath to close the day gently.',
         size: "12 m²",
         beds: "Bedroom 1: 1 double bed · Living room: 1 sofa bed",
         amenities: [
