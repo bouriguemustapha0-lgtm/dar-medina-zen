@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { chambreDoubleTerrassePhoto } from "@/lib/photos";
+import { chambreDoubleTerrassePhoto, chambreDoubleTerrasseGallery } from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
 import { Reveal } from "@/components/reveal";
@@ -70,6 +70,22 @@ function RoomsPage() {
                       decoding="async"
                       className="arch h-64 w-full object-cover sm:h-80 lg:h-[26rem]"
                     />
+                    {key === "andalouse" ? (
+                      <div className="mt-1.5 grid grid-cols-2 gap-1.5">
+                        {chambreDoubleTerrasseGallery.slice(1).map((src, n) => (
+                          <img
+                            key={src}
+                            src={src}
+                            alt={`${room.name} — ${n + 2}`}
+                            width={640}
+                            height={480}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-28 w-full border border-cobalt/20 object-cover sm:h-32"
+                          />
+                        ))}
+                      </div>
+                    ) : null}
                   </figure>
                   <div>
                     <h2 className="text-3xl sm:text-[2.4rem]">

@@ -8,7 +8,9 @@ import terrasseImg from "@/assets/terrasse.jpg.asset.json";
 import salleBain from "@/assets/salle-bain.jpg.asset.json";
 import petitDej from "@/assets/petit-dejeuner.jpg.asset.json";
 import theMenthe from "@/assets/the-menthe.jpg.asset.json";
-import chambreDoubleTerrasse from "@/assets/chambre-double-terrasse.jpg.asset.json";
+import doubleTerrasseA from "@/assets/chambre-double-terrasse-a.jpg.asset.json";
+import doubleTerrasseB from "@/assets/chambre-double-terrasse-b.jpg.asset.json";
+import doubleTerrasseC from "@/assets/chambre-double-terrasse-c.jpg.asset.json";
 
 export const heroPatio = patio.url;
 export const patioJourPhoto = patioJour.url;
@@ -20,4 +22,5 @@ export const terrasse = terrasseImg.url;
 export const spaHammam = salleBain.url;
 export const petitDejeuner = petitDej.url;
 export const theMenthePhoto = theMenthe.url;
-export const chambreDoubleTerrassePhoto = chambreDoubleTerrasse.url;
+export const chambreDoubleTerrassePhoto = doubleTerrasseA.url;
+export const chambreDoubleTerrasseGallery = [doubleTerrasseA.url, doubleTerrasseB.url, doubleTerrasseC.url];
