@@ -1,5 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { chambreDoubleTerrassePhoto, chambreDoubleTerrasseGallery } from "@/lib/photos";
+import {
+  chambreDoubleTerrassePhoto,
+  chambreDoubleTerrasseGallery,
+  chambreDoublePatioPhoto,
+  chambreDoublePatioGallery,
+} from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
 import { Reveal } from "@/components/reveal";
@@ -30,6 +35,12 @@ export const Route = createFileRoute("/chambres")({
 
 const IMAGES = {
   andalouse: chambreDoubleTerrassePhoto,
+  patio: chambreDoublePatioPhoto,
+} as const;
+
+const GALLERIES = {
+  andalouse: chambreDoubleTerrasseGallery,
+  patio: chambreDoublePatioGallery,
 } as const;
 
 function RoomsPage() {
@@ -37,6 +48,7 @@ function RoomsPage() {
 
   const alt = {
     andalouse: t.rooms.items.andalouse.name,
+    patio: t.rooms.items.patio.name,
   } as const;
 
   return (
@@ -70,9 +82,9 @@ function RoomsPage() {
                       decoding="async"
                       className="arch h-64 w-full object-cover sm:h-80 lg:h-[26rem]"
                     />
-                    {key === "andalouse" ? (
+                    {GALLERIES[key] ? (
                       <div className="mt-1.5 grid grid-cols-2 gap-1.5">
-                        {chambreDoubleTerrasseGallery.slice(1).map((src, n) => (
+                        {GALLERIES[key].slice(1).map((src, n) => (
                           <img
                             key={src}
                             src={src}
