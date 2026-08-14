@@ -10,6 +10,8 @@ import {
   chambreTripleConfortGallery,
   chambreDoublePhoto,
   chambreDoubleGallery,
+  chambreSimplePhoto,
+  chambreSimpleGallery,
 } from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
