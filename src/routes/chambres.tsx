@@ -66,6 +66,16 @@ const GALLERIES = {
 
 function RoomsPage() {
   const { t, search } = useLang();
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+
+  const toggleRoom = (key: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
 
   const alt = {
     andalouse: t.rooms.items.andalouse.name,
