@@ -47,6 +47,7 @@ const IMAGES = {
   triple: chambreTripleClassiquePhoto,
   tripleConfort: chambreTripleConfortPhoto,
   double: chambreDoublePhoto,
+  simple: chambreSimplePhoto,
 } as const;
 
 const GALLERIES = {
@@ -55,6 +56,7 @@ const GALLERIES = {
   triple: chambreTripleClassiqueGallery,
   tripleConfort: chambreTripleConfortGallery,
   double: chambreDoubleGallery,
+  simple: chambreSimpleGallery,
 } as const;
 
 function RoomsPage() {
@@ -66,6 +68,7 @@ function RoomsPage() {
     triple: t.rooms.items.triple.name,
     tripleConfort: t.rooms.items.tripleConfort.name,
     double: t.rooms.items.double.name,
+    simple: t.rooms.items.simple.name,
   } as const;
 
   return (
