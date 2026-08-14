@@ -218,6 +218,23 @@ const fr = {
           "Portant",
         ],
       },
+      simple: {
+        name: "Chambre Simple",
+        view: "Chambre sur le riad",
+        bath: "Salle de bains privative : baignoire, papier toilette",
+        text: "Chambre simple climatisée de 6 m² avec salle de bains privative équipée d'une baignoire. Ce logement comporte 1 lit simple. Lits confortables, notés 7,6 d'après 136 commentaires.",
+        size: "6 m²",
+        beds: "1 lit simple",
+        amenities: [
+          "Climatisation",
+          "Wi-Fi gratuit",
+          "Baignoire",
+          "Salle de bains privative",
+          "Linge de maison",
+          "Serviettes",
+          "Portant",
+        ],
+      },
     },
   },
   location: {
