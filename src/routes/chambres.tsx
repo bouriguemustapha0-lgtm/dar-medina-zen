@@ -4,6 +4,8 @@ import {
   chambreDoubleTerrasseGallery,
   chambreDoublePatioPhoto,
   chambreDoublePatioGallery,
+  suiteDeluxePhoto,
+  suiteDeluxeGallery,
   chambreTripleClassiquePhoto,
   chambreTripleClassiqueGallery,
   chambreTripleConfortPhoto,
@@ -44,6 +46,7 @@ export const Route = createFileRoute("/chambres")({
 const IMAGES = {
   andalouse: chambreDoubleTerrassePhoto,
   patio: chambreDoublePatioPhoto,
+  suite: suiteDeluxePhoto,
   triple: chambreTripleClassiquePhoto,
   tripleConfort: chambreTripleConfortPhoto,
   double: chambreDoublePhoto,
@@ -53,6 +56,7 @@ const IMAGES = {
 const GALLERIES = {
   andalouse: chambreDoubleTerrasseGallery,
   patio: chambreDoublePatioGallery,
+  suite: suiteDeluxeGallery,
   triple: chambreTripleClassiqueGallery,
   tripleConfort: chambreTripleConfortGallery,
   double: chambreDoubleGallery,
@@ -65,6 +69,7 @@ function RoomsPage() {
   const alt = {
     andalouse: t.rooms.items.andalouse.name,
     patio: t.rooms.items.patio.name,
+    suite: t.rooms.items.suite.name,
     triple: t.rooms.items.triple.name,
     tripleConfort: t.rooms.items.tripleConfort.name,
     double: t.rooms.items.double.name,
