@@ -26,6 +26,9 @@ import doubleC from "@/assets/chambre-double-c.jpg.asset.json";
 import simpleA from "@/assets/chambre-simple-a.jpg.asset.json";
 import simpleB from "@/assets/chambre-simple-b.jpg.asset.json";
 import simpleC from "@/assets/chambre-simple-c.jpg.asset.json";
+import suiteA from "@/assets/suite-deluxe-a.jpg.asset.json";
+import suiteB from "@/assets/suite-deluxe-b.jpg.asset.json";
+import suiteC from "@/assets/suite-deluxe-c.jpg.asset.json";
 
 export const heroPatio = patio.url;
 export const patioJourPhoto = patioJour.url;
@@ -54,3 +57,6 @@ export const chambreDoubleGallery = [doubleA.url, doubleB.url, doubleC.url];
 
 export const chambreSimplePhoto = simpleA.url;
 export const chambreSimpleGallery = [simpleA.url, simpleB.url, simpleC.url];
+
+export const suiteDeluxePhoto = suiteA.url;
+export const suiteDeluxeGallery = [suiteA.url, suiteB.url, suiteC.url];
