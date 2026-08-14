@@ -582,6 +582,23 @@ const en: typeof fr = {
           "Clothes rack",
         ],
       },
+      simple: {
+        name: "Single Room",
+        view: "Room within the riad",
+        bath: "Private bathroom: bath, toilet paper",
+        text: "Air-conditioned single room of 6 m² with a private bathroom boasting a bath. The unit has 1 single bed. Comfortable beds, rated 7.6 from 136 reviews.",
+        size: "6 m²",
+        beds: "1 single bed",
+        amenities: [
+          "Air conditioning",
+          "Free Wi-Fi",
+          "Bath",
+          "Private bathroom",
+          "Linen",
+          "Towels",
+          "Clothes rack",
+        ],
+      },
     },
   },
   location: {
