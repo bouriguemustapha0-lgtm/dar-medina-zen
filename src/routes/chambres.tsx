@@ -141,60 +141,77 @@ function RoomsPage() {
                     </h2>
                     <ZelligeFrieze className="mt-5 h-4 w-28 text-cobalt opacity-60" />
                     <p className="mt-6 text-[0.95rem] leading-relaxed text-muted-foreground">{room.text}</p>
-                    <dl className="mt-8 space-y-4 border-t border-border pt-6 text-sm">
-                      <div className="flex gap-3">
-                        <MoucharabiehIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
-                        <div>
-                          <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.viewLabel}</dt>
-                          <dd className="mt-1 text-foreground/85">{room.view}</dd>
-                        </div>
-                      </div>
-                      <div className="flex gap-3">
-                        <HammamIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
-                        <div>
-                          <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.bathLabel}</dt>
-                          <dd className="mt-1 text-foreground/85">{room.bath}</dd>
-                        </div>
-                      </div>
-                      {room.size ? (
+                    <button
+                      type="button"
+                      onClick={() => toggleRoom(key)}
+                      className="sm:hidden mt-5 inline-flex items-center gap-2 text-[0.72rem] font-medium uppercase tracking-[0.18em] text-cobalt underline underline-offset-4 decoration-cobalt/30 hover:text-terracotta hover:decoration-terracotta/50 transition-colors"
+                      aria-expanded={expanded.has(key)}
+                      aria-controls={`room-details-${key}`}
+                    >
+                      {expanded.has(key) ? t.rooms.showLess : t.rooms.learnMore}
+                      <span aria-hidden="true" className="text-base leading-none">
+                        {expanded.has(key) ? "−" : "+"}
+                      </span>
+                    </button>
+                    <div
+                      id={`room-details-${key}`}
+                      className={expanded.has(key) ? "block" : "hidden sm:block"}
+                    >
+                      <dl className="mt-8 space-y-4 border-t border-border pt-6 text-sm">
                         <div className="flex gap-3">
                           <MoucharabiehIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                           <div>
-                            <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
-                              {t.rooms.sizeLabel}
-                            </dt>
-                            <dd className="mt-1 text-foreground/85">
-                              {room.size}
-                              {room.beds ? ` · ${room.beds}` : ""}
-                            </dd>
+                            <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.viewLabel}</dt>
+                            <dd className="mt-1 text-foreground/85">{room.view}</dd>
                           </div>
                         </div>
-                      ) : null}
-                      <div className="flex gap-3">
-                        <LanternIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
-                        <div>
-                          <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.priceLabel}</dt>
-                          <dd className="mt-1 text-foreground/85">{t.rooms.priceValue}</dd>
+                        <div className="flex gap-3">
+                          <HammamIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                          <div>
+                            <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.bathLabel}</dt>
+                            <dd className="mt-1 text-foreground/85">{room.bath}</dd>
+                          </div>
                         </div>
-                      </div>
-                    </dl>
-                    {room.amenities?.length ? (
-                      <div className="mt-6">
-                        <p className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
-                          {t.rooms.amenitiesLabel}
-                        </p>
-                        <ul className="mt-3 flex flex-wrap gap-2">
-                          {room.amenities.map((a) => (
-                            <li
-                              key={a}
-                              className="border border-terracotta/40 px-3 py-1 text-[0.72rem] text-foreground/80"
-                            >
-                              {a}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : null}
+                        {room.size ? (
+                          <div className="flex gap-3">
+                            <MoucharabiehIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                            <div>
+                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                                {t.rooms.sizeLabel}
+                              </dt>
+                              <dd className="mt-1 text-foreground/85">
+                                {room.size}
+                                {room.beds ? ` · ${room.beds}` : ""}
+                              </dd>
+                            </div>
+                          </div>
+                        ) : null}
+                        <div className="flex gap-3">
+                          <LanternIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                          <div>
+                            <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.priceLabel}</dt>
+                            <dd className="mt-1 text-foreground/85">{t.rooms.priceValue}</dd>
+                          </div>
+                        </div>
+                      </dl>
+                      {room.amenities?.length ? (
+                        <div className="mt-6">
+                          <p className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                            {t.rooms.amenitiesLabel}
+                          </p>
+                          <ul className="mt-3 flex flex-wrap gap-2">
+                            {room.amenities.map((a) => (
+                              <li
+                                key={a}
+                                className="border border-terracotta/40 px-3 py-1 text-[0.72rem] text-foreground/80"
+                              >
+                                {a}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : null}
+                    </div>
                     <div className="mt-8 flex flex-wrap gap-4">
                       <a
                         href={whatsappLink(`${t.whatsappMessage} (${room.name})`)}
