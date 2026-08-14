@@ -105,7 +105,7 @@ const fr = {
     description:
       "Les 8 chambres du Riad Dar Medina Land à Marrakech : vue montagne, baignoire spa, toilette séparée, sèche-cheveux et draps de bain fournis.",
     eyebrow: "Hébergement",
-    heading: "Huit chambres, cinq caractères",
+    heading: "Huit chambres autour du patio",
     lead: "Le riad compte 8 chambres réparties sur deux niveaux autour du patio. Certaines offrent une vue sur les montagnes de l'Atlas ; toutes disposent d'un sèche-cheveux et de draps de bain fournis. Les tarifs sont communiqués sur demande selon la saison et la durée du séjour.",
     priceLabel: "Tarif",
     priceValue: "Sur demande",
@@ -367,7 +367,7 @@ const en: typeof fr = {
     description:
       "The 8 rooms of Riad Dar Medina Land in Marrakech: mountain views, spa bath, separate toilet, hairdryer and bath towels provided.",
     eyebrow: "Accommodation",
-    heading: "Eight rooms, five characters",
+    heading: "Eight rooms around the patio",
     lead: "The riad has 8 rooms over two floors around the patio. Several look out onto the Atlas mountains; all include a hairdryer and bath towels. Rates are given on request depending on season and length of stay.",
     priceLabel: "Rate",
     priceValue: "On request",
