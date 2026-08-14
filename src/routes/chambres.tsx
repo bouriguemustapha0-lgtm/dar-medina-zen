@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { chambreAtlas, detailZellige, terrasse, heroPatio, spaHammam } from "@/lib/photos";
+import { chambreAtlas, chambreDoubleTerrassePhoto, detailZellige, terrasse, spaHammam } from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
 import { Reveal } from "@/components/reveal";
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/chambres")({
 });
 
 const IMAGES = {
-  andalouse: heroPatio,
+  andalouse: chambreDoubleTerrassePhoto,
   atlas: chambreAtlas,
   zellige: detailZellige,
   moucharabieh: spaHammam,
@@ -40,7 +40,7 @@ function RoomsPage() {
   const { t, search } = useLang();
 
   const alt = {
-    andalouse: t.images.hero,
+    andalouse: t.rooms.items.andalouse.name,
     atlas: t.images.room,
     zellige: t.images.zellige,
     moucharabieh: t.images.spa,
@@ -59,7 +59,8 @@ function RoomsPage() {
         <LanternWatermark className="pointer-events-none absolute -left-8 top-40 hidden h-80 w-32 text-terracotta opacity-[0.09] xl:block" />
         <div className="mx-auto max-w-7xl space-y-8 px-5 sm:px-8">
           {ROOM_KEYS.map((key, i) => {
-            const room = t.rooms.items[key];
+            const room = t.rooms.items[key] as (typeof t.rooms.items)[typeof key] &
+              Partial<{ size: string; beds: string; amenities: readonly string[] }>;
             return (
               <Reveal key={key}>
                 <article
@@ -99,6 +100,20 @@ function RoomsPage() {
                           <dd className="mt-1 text-foreground/85">{room.bath}</dd>
                         </div>
                       </div>
+                      {room.size ? (
+                        <div className="flex gap-3">
+                          <MoucharabiehIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
+                          <div>
+                            <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                              {t.rooms.sizeLabel}
+                            </dt>
+                            <dd className="mt-1 text-foreground/85">
+                              {room.size}
+                              {room.beds ? ` · ${room.beds}` : ""}
+                            </dd>
+                          </div>
+                        </div>
+                      ) : null}
                       <div className="flex gap-3">
                         <LanternIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                         <div>
@@ -107,6 +122,23 @@ function RoomsPage() {
                         </div>
                       </div>
                     </dl>
+                    {room.amenities?.length ? (
+                      <div className="mt-6">
+                        <p className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                          {t.rooms.amenitiesLabel}
+                        </p>
+                        <ul className="mt-3 flex flex-wrap gap-2">
+                          {room.amenities.map((a) => (
+                            <li
+                              key={a}
+                              className="border border-terracotta/40 px-3 py-1 text-[0.72rem] text-foreground/80"
+                            >
+                              {a}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                     <div className="mt-8 flex flex-wrap gap-4">
                       <a
                         href={whatsappLink(`${t.whatsappMessage} (${room.name})`)}
