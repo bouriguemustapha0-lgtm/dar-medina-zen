@@ -63,5 +63,5 @@ export const DISTANCE_KEYS = [
 
 export type DistanceKey = (typeof DISTANCE_KEYS)[number];
 
-export const ROOM_KEYS = ["andalouse", "atlas", "zellige", "moucharabieh", "menara"] as const;
+export const ROOM_KEYS = ["andalouse"] as const;
 export type RoomKey = (typeof ROOM_KEYS)[number];

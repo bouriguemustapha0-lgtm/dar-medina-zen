@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { chambreAtlas, chambreDoubleTerrassePhoto, detailZellige, terrasse, spaHammam } from "@/lib/photos";
+import { chambreDoubleTerrassePhoto } from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
 import { Reveal } from "@/components/reveal";
@@ -30,10 +30,6 @@ export const Route = createFileRoute("/chambres")({
 
 const IMAGES = {
   andalouse: chambreDoubleTerrassePhoto,
-  atlas: chambreAtlas,
-  zellige: detailZellige,
-  moucharabieh: spaHammam,
-  menara: terrasse,
 } as const;
 
 function RoomsPage() {
@@ -41,10 +37,6 @@ function RoomsPage() {
 
   const alt = {
     andalouse: t.rooms.items.andalouse.name,
-    atlas: t.images.room,
-    zellige: t.images.zellige,
-    moucharabieh: t.images.spa,
-    menara: t.images.terrace,
   } as const;
 
   return (
