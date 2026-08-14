@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Bath, Croissant, Trees, Wifi, ConciergeBell, Star } from "lucide-react";
-import { heroPatio, chambreAtlas, detailZellige, terrasse } from "@/lib/photos";
+import { heroPatio, patioJourPhoto, salonPhoto } from "@/lib/photos";
 import { EightPointStar, SectionTitle } from "@/components/ornaments";
 import { Reveal } from "@/components/reveal";
 import { content } from "@/i18n/content";
@@ -39,8 +39,8 @@ function HomePage() {
         <img
           src={heroPatio}
           alt={t.images.hero}
-          width={1920}
-          height={1088}
+          width={1440}
+          height={1920}
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
@@ -110,28 +110,28 @@ function HomePage() {
 
             <Reveal delay={120} className="grid grid-cols-2 gap-4">
               <img
-                src={detailZellige}
+                src={salonPhoto}
                 alt={t.images.zellige}
-                width={1280}
-                height={960}
+                width={1440}
+                height={1920}
                 loading="lazy"
                 decoding="async"
                 className="col-span-2 h-64 w-full object-cover sm:h-80"
               />
               <img
-                src={terrasse}
+                src={patioJourPhoto}
                 alt={t.images.terrace}
-                width={1280}
-                height={960}
+                width={1440}
+                height={1920}
                 loading="lazy"
                 decoding="async"
                 className="h-40 w-full object-cover sm:h-52"
               />
               <img
-                src={chambreAtlas}
+                src={heroPatio}
                 alt={t.images.room}
-                width={1280}
-                height={960}
+                width={1440}
+                height={1920}
                 loading="lazy"
                 decoding="async"
                 className="mt-6 h-40 w-full object-cover sm:h-52"
@@ -252,8 +252,8 @@ function HomePage() {
         <img
           src={heroPatio}
           alt={t.images.hero}
-          width={1920}
-          height={1088}
+          width={1440}
+          height={1920}
           loading="lazy"
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
