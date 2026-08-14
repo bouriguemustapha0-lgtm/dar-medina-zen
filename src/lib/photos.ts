@@ -1,8 +1,9 @@
-import patio from "@/assets/patio.jpg.asset.json";
-import patioJour from "@/assets/patio-jour.jpg.asset.json";
+import patio from "@/assets/patio-hd.jpg.asset.json";
+import patioJour from "@/assets/patio-arches-hd.jpg.asset.json";
 import entreePatio from "@/assets/entree-patio.jpg.asset.json";
 import chambre from "@/assets/chambre.jpg.asset.json";
-import salon from "@/assets/salon.jpg.asset.json";
+import salon from "@/assets/salon-patio-hd.jpg.asset.json";
+
 import zellige from "@/assets/zellige.jpg.asset.json";
 import terrasseImg from "@/assets/terrasse.jpg.asset.json";
 import salleBain from "@/assets/salle-bain.jpg.asset.json";
