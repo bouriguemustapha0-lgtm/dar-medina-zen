@@ -51,3 +51,6 @@ export const chambreTripleConfortGallery = [confortA.url, confortB.url, confortC
 
 export const chambreDoublePhoto = doubleA.url;
 export const chambreDoubleGallery = [doubleA.url, doubleB.url, doubleC.url];
+
+export const chambreSimplePhoto = simpleA.url;
+export const chambreSimpleGallery = [simpleA.url, simpleB.url, simpleC.url];
