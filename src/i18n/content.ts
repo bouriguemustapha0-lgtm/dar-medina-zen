@@ -661,6 +661,28 @@ const en: typeof fr = {
           "Clothes rack",
         ],
       },
+      economique: {
+        name: "Economy Double Room",
+        view: "Mountain view and inner courtyard view",
+        bath: "Private bathroom: spa bath, shower or bath, bidet, free toiletries, bathrobe, hairdryer, additional toilet, toilet paper",
+        text: "The best charm-to-price ratio in the riad: 10 m², non-smoking, where the mountains and the patio come in through the window. Soft bathrobes, free toiletries, a spa bath and a dining corner of your own for morning mint tea.",
+        size: "10 m²",
+        beds: "1 double bed",
+        amenities: [
+          "Air conditioning",
+          "Heating",
+          "Spa bath",
+          "Private bathroom",
+          "Free Wi-Fi",
+          "Refrigerator",
+          "Dining area / dining table",
+          "Linen",
+          "Towels",
+          "Clothes rack",
+          "Non-smoking",
+        ],
+      },
+
     },
   },
   location: {
