@@ -380,3 +380,52 @@
   line-height: 1.35;
   letter-spacing: 0.005em;
 }
+
+/* Ticket / coupon price stub */
+@utility ticket-stub {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px dashed var(--cobalt);
+  background: linear-gradient(135deg, var(--cobalt-deep), var(--cobalt));
+  color: var(--on-primary);
+  text-align: center;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -0.45rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background: var(--background);
+  }
+  &::before { top: -0.45rem; }
+  &::after { bottom: -0.45rem; }
+}
+
+@utility sticky-ticket-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in oklch, var(--ivory) 96%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+@utility room-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--border);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: color-mix(in oklch, var(--foreground) 80%, transparent);
+}
+
