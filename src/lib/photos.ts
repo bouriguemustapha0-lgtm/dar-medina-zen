@@ -51,7 +51,7 @@ export const chambreDoublePatioPhoto = doublePatioC.url;
 export const chambreDoublePatioGallery = [doublePatioC.url, doublePatioA.url, doublePatioB.url];
 
 export const chambreTripleClassiquePhoto = tripleA.url;
-export const chambreTripleClassiqueGallery = [tripleA.url, tripleB.url, tripleC.url];
+export const chambreTripleClassiqueGallery = [tripleA.url, tripleB.url];
 
 export const chambreTripleConfortPhoto = confortA.url;
 export const chambreTripleConfortGallery = [confortA.url, confortB.url, confortC.url];
