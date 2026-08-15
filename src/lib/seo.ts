@@ -1,5 +1,5 @@
 import { content, type Lang } from "@/i18n/content";
-import { RIAD, fullAddressEn, fullAddressFr } from "./riad";
+import { RIAD, fullAddressEn, fullAddressFr, mapsLink } from "./riad";
 
 /**
  * Head metadata builder: title / description / OG / Twitter + canonical and
@@ -93,9 +93,7 @@ export function lodgingJsonLd(lang: Lang) {
       reviewRating: { "@type": "Rating", ratingValue: String(r.rating), bestRating: "5" },
       reviewBody: r.text,
     })),
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      `${RIAD.name}, ${RIAD.street}, ${RIAD.city}`,
-    )}`,
+    hasMap: mapsLink,
     areaServed: lang === "en" ? fullAddressEn : fullAddressFr,
   };
 }
