@@ -27,6 +27,9 @@ import doubleC from "@/assets/chambre-double-c.jpg.asset.json";
 import simpleA from "@/assets/chambre-simple-a.jpg.asset.json";
 import simpleB from "@/assets/chambre-simple-b.jpg.asset.json";
 import simpleC from "@/assets/chambre-simple-c.jpg.asset.json";
+import ecoA from "@/assets/chambre-eco-a.jpg.asset.json";
+import ecoB from "@/assets/chambre-eco-b.jpg.asset.json";
+import ecoC from "@/assets/chambre-eco-c.jpg.asset.json";
 import suiteA from "@/assets/suite-deluxe-a.jpg.asset.json";
 import suiteB from "@/assets/suite-deluxe-b.jpg.asset.json";
 import suiteC from "@/assets/suite-deluxe-c.jpg.asset.json";
@@ -61,3 +64,6 @@ export const chambreSimpleGallery = [simpleA.url, simpleB.url, simpleC.url];
 
 export const suiteDeluxePhoto = suiteA.url;
 export const suiteDeluxeGallery = [suiteA.url, suiteB.url, suiteC.url];
+
+export const chambreEcoPhoto = ecoA.url;
+export const chambreEcoGallery = [ecoA.url, ecoB.url, ecoC.url];

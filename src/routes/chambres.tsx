@@ -15,6 +15,8 @@ import {
   chambreDoubleGallery,
   chambreSimplePhoto,
   chambreSimpleGallery,
+  chambreEcoPhoto,
+  chambreEcoGallery,
 } from "@/lib/photos";
 import { SectionTitle, ZelligeFrieze, LanternWatermark } from "@/components/ornaments";
 import { MoucharabiehIcon, HammamIcon, LanternIcon } from "@/components/moroccan-icons";
@@ -52,6 +54,7 @@ const IMAGES = {
   tripleConfort: chambreTripleConfortPhoto,
   double: chambreDoublePhoto,
   simple: chambreSimplePhoto,
+  economique: chambreEcoPhoto,
 } as const;
 
 const GALLERIES = {
@@ -62,6 +65,7 @@ const GALLERIES = {
   tripleConfort: chambreTripleConfortGallery,
   double: chambreDoubleGallery,
   simple: chambreSimpleGallery,
+  economique: chambreEcoGallery,
 } as const;
 
 function RoomsPage() {
@@ -85,6 +89,7 @@ function RoomsPage() {
     tripleConfort: t.rooms.items.tripleConfort.name,
     double: t.rooms.items.double.name,
     simple: t.rooms.items.simple.name,
+    economique: t.rooms.items.economique.name,
   } as const;
 
   return (
