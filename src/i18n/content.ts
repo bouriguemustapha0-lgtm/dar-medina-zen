@@ -106,9 +106,9 @@ const fr = {
       "Les 8 chambres du Riad Dar Medina Land à Marrakech : vue montagne, baignoire spa, toilette séparée, sèche-cheveux et draps de bain fournis.",
     eyebrow: "Hébergement",
     heading: "Huit chambres autour du patio",
-    lead: "Le riad compte 8 chambres réparties sur deux niveaux autour du patio. Certaines offrent une vue sur les montagnes de l'Atlas ; toutes disposent d'un sèche-cheveux et de draps de bain fournis. Les tarifs sont communiqués sur demande selon la saison et la durée du séjour.",
+    lead: "Le riad compte 8 chambres réparties sur deux niveaux autour du patio. Certaines offrent une vue sur les montagnes de l'Atlas ; toutes disposent d'un sèche-cheveux et de draps de bain fournis. Les tarifs affichés sont par chambre et par nuit, selon la saison et la durée du séjour.",
     priceLabel: "Tarif",
-    priceValue: "Sur demande",
+    priceValue: "À partir de 35 €",
     viewLabel: "Vue",
     bathLabel: "Salle de bains",
     sizeLabel: "Superficie",
@@ -124,6 +124,7 @@ const fr = {
         text: "Poussez la porte : 12 m² baignés de lumière, des zelliges jusqu'au plafond et votre propre terrasse pour le thé du soir. La baignoire balnéo attend le retour des souks, la climatisation fait le reste. Lits notés 7,6 par 136 voyageurs.",
         size: "12 m²",
         beds: "1 lit double",
+        price: "45 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -142,6 +143,7 @@ const fr = {
         text: "Le patio d'un côté, les cimes de l'Atlas de l'autre : cette chambre de 12 m² vous offre les deux depuis sa terrasse privée. Coin repas, peignoirs moelleux, baignoire balnéo et douche — une adresse pour rester un peu plus longtemps. Non-fumeurs.",
         size: "12 m²",
         beds: "1 lit double",
+        price: "46 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -167,6 +169,7 @@ const fr = {
         text: 'Faite pour voyager à trois : 12 m², deux grands lits doubles, murs de zellige et une vraie baignoire pour dénouer la journée. Simple, fraîche, climatisée, à deux pas de Jemaa el-Fna. Non-fumeurs.',
         size: "12 m²",
         beds: "2 lits doubles",
+        price: "50 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -185,6 +188,7 @@ const fr = {
         text: "Murs vert menthe, banquette rouge et tapis berbères : la plus chaleureuse de nos triples. 12 m², deux lits doubles, baignoire privative et climatisation pour des siestes de milieu d'après-midi. Non-fumeurs.",
         size: "12 m²",
         beds: "2 lits doubles",
+        price: "50 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -203,6 +207,7 @@ const fr = {
         text: 'Un nid de 10 m² qui ouvre sur sa terrasse : vue montagne, vue patio, et le silence de la médina. Peignoirs, articles de toilette, coin repas et baignoire balnéo — le petit luxe discret des voyageurs à deux.',
         size: "10 m²",
         beds: "1 lit double",
+        price: "45 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -227,6 +232,7 @@ const fr = {
         text: "Compacte et lumineuse, 6 m² pensés pour l'essentiel : un lit douillet, des zelliges bleus, la climatisation et une salle de bains privative avec baignoire. La médina commence derrière votre porte.",
         size: "6 m²",
         beds: "1 lit simple",
+        price: "35 €",
         amenities: [
           "Climatisation",
           "Wi-Fi gratuit",
@@ -244,6 +250,7 @@ const fr = {
         text: "Notre plus bel espace : un salon à vous, une chambre séparée derrière sa porte, 12 m² habillés de zellige et d'artisanat marocain. Canapé-lit pour un troisième voyageur, baignoire balnéo pour finir la journée en douceur.",
         size: "12 m²",
         beds: "Chambre 1 : 1 lit double · Salon : 1 canapé-lit",
+        price: "45 €",
         amenities: [
           "Suite privée",
           "Climatisation",
@@ -262,6 +269,7 @@ const fr = {
         text: "Le meilleur rapport charme-prix du riad : 10 m² non-fumeurs où la montagne et le patio entrent par la fenêtre. Peignoirs moelleux, articles de toilette offerts, baignoire balnéo et un coin repas rien qu'à vous pour un thé à la menthe au réveil.",
         size: "10 m²",
         beds: "1 lit double",
+        price: "42 €",
         amenities: [
           "Climatisation",
           "Chauffage",
@@ -512,9 +520,9 @@ const en: typeof fr = {
       "The 8 rooms of Riad Dar Medina Land in Marrakech: mountain views, spa bath, separate toilet, hairdryer and bath towels provided.",
     eyebrow: "Accommodation",
     heading: "Eight rooms around the patio",
-    lead: "The riad has 8 rooms over two floors around the patio. Several look out onto the Atlas mountains; all include a hairdryer and bath towels. Rates are given on request depending on season and length of stay.",
+    lead: "The riad has 8 rooms over two floors around the patio. Several look out onto the Atlas mountains; all include a hairdryer and bath towels. Rates shown are per room, per night, depending on season and length of stay.",
     priceLabel: "Rate",
-    priceValue: "On request",
+    priceValue: "From 35 €",
     viewLabel: "View",
     bathLabel: "Bathroom",
     sizeLabel: "Size",
@@ -530,6 +538,7 @@ const en: typeof fr = {
         text: 'Push the door open: 12 m² full of light, zellige tiles up to the ceiling and your own terrace for evening tea. The spa bath is waiting after the souks, the air conditioning does the rest. Beds rated 7.6 by 136 travellers.',
         size: "12 m²",
         beds: "1 double bed",
+        price: "45 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -548,6 +557,7 @@ const en: typeof fr = {
         text: "The patio on one side, the Atlas peaks on the other — this 12 m² room gives you both from its private terrace. Dining nook, soft bathrobes, spa bath and shower: an address you'll want to stretch out. Non-smoking.",
         size: "12 m²",
         beds: "1 double bed",
+        price: "46 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -573,6 +583,7 @@ const en: typeof fr = {
         text: 'Made for travelling as three: 12 m², two generous double beds, zellige walls and a real bathtub to unwind the day. Simple, cool, air-conditioned, minutes from Jemaa el-Fna. Non-smoking.',
         size: "12 m²",
         beds: "2 double beds",
+        price: "50 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -591,6 +602,7 @@ const en: typeof fr = {
         text: 'Mint-green walls, a red banquette and Berber rugs — the warmest of our triples. 12 m², two double beds, private bath and air conditioning made for mid-afternoon naps. Non-smoking.',
         size: "12 m²",
         beds: "2 double beds",
+        price: "50 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -609,6 +621,7 @@ const en: typeof fr = {
         text: 'A 10 m² nest that opens onto its own terrace: mountain views, patio views and the hush of the medina. Bathrobes, toiletries, dining nook and a spa bath — quiet luxury for two.',
         size: "10 m²",
         beds: "1 double bed",
+        price: "45 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -633,6 +646,7 @@ const en: typeof fr = {
         text: 'Compact and bright, 6 m² built around the essentials: a cosy bed, blue zellige, air conditioning and a private bathroom with a bath. The medina starts right outside your door.',
         size: "6 m²",
         beds: "1 single bed",
+        price: "35 €",
         amenities: [
           "Air conditioning",
           "Free Wi-Fi",
@@ -650,6 +664,7 @@ const en: typeof fr = {
         text: 'Our finest space: a living room of your own, a bedroom behind its own door, 12 m² dressed in zellige and Moroccan craft. Sofa bed for a third traveller, spa bath to close the day gently.',
         size: "12 m²",
         beds: "Bedroom 1: 1 double bed · Living room: 1 sofa bed",
+        price: "45 €",
         amenities: [
           "Private suite",
           "Air conditioning",
@@ -668,6 +683,7 @@ const en: typeof fr = {
         text: "The best charm-to-price ratio in the riad: 10 m², non-smoking, where the mountains and the patio come in through the window. Soft bathrobes, free toiletries, a spa bath and a dining corner of your own for morning mint tea.",
         size: "10 m²",
         beds: "1 double bed",
+        price: "42 €",
         amenities: [
           "Air conditioning",
           "Heating",

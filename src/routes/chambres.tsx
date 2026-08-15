@@ -105,7 +105,7 @@ function RoomsPage() {
         <div className="mx-auto max-w-7xl space-y-8 px-5 sm:px-8">
           {ROOM_KEYS.map((key, i) => {
             const room = t.rooms.items[key] as (typeof t.rooms.items)[typeof key] &
-              Partial<{ size: string; beds: string; amenities: readonly string[] }>;
+              Partial<{ size: string; beds: string; price: string; amenities: readonly string[] }>;
             return (
               <Reveal key={key}>
                 <article
@@ -195,7 +195,7 @@ function RoomsPage() {
                           <LanternIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                           <div>
                             <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.priceLabel}</dt>
-                            <dd className="mt-1 text-foreground/85">{t.rooms.priceValue}</dd>
+                            <dd className="mt-1 text-foreground/85">{room.price ?? t.rooms.priceValue}</dd>
                           </div>
                         </div>
                       </dl>
