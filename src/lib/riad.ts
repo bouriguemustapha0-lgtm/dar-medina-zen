@@ -33,9 +33,8 @@ export const mailtoLink = (subject: string, body: string) =>
 
 
 
-export const mapsLink =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(`${RIAD.name}, ${RIAD.street}, ${RIAD.city}`);
+export const mapsLink = "https://maps.app.goo.gl/bZHUq6eokmRQG395A";
+
 
 /** Carte Google : un seul repère nommé « Riad Dar Medina Land ». */
 export const mapEmbedSrc = `https://www.google.com/maps?q=${RIAD.latitude},${RIAD.longitude}(${encodeURIComponent(
