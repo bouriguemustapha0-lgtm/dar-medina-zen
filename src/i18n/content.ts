@@ -255,6 +255,28 @@ const fr = {
           "Portant",
         ],
       },
+      economique: {
+        name: "Chambre Double Économique",
+        view: "Vue sur la montagne et sur la cour intérieure",
+        bath: "Salle de bains privative : baignoire balnéo, douche ou baignoire, bidet, articles de toilette gratuits, peignoir, sèche-cheveux, toilettes supplémentaires, papier toilette",
+        text: "Le meilleur rapport charme-prix du riad : 10 m² non-fumeurs où la montagne et le patio entrent par la fenêtre. Peignoirs moelleux, articles de toilette offerts, baignoire balnéo et un coin repas rien qu'à vous pour un thé à la menthe au réveil.",
+        size: "10 m²",
+        beds: "1 lit double",
+        amenities: [
+          "Climatisation",
+          "Chauffage",
+          "Baignoire balnéo",
+          "Salle de bains privative",
+          "Wi-Fi gratuit",
+          "Réfrigérateur",
+          "Coin repas / table à manger",
+          "Linge de maison",
+          "Serviettes",
+          "Portant",
+          "Non-fumeurs",
+        ],
+      },
+
     },
   },
   location: {
