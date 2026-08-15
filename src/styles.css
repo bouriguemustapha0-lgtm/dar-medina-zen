@@ -426,6 +426,6 @@
   font-size: 0.6875rem;
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: var(--foreground/80);
+  color: color-mix(in oklch, var(--foreground) 80%, transparent);
 }
 
