@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import { useLang } from "@/i18n/use-lang";
 import { RIAD, mapsLink, whatsappLink } from "@/lib/riad";
-import logoAsset from "@/assets/logo.jpeg.asset.json";
+import logoAsset from "@/assets/logo.jpeg";
 import { Divider } from "./ornaments";
 
 const LINKS = [
@@ -23,7 +23,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt={`${RIAD.name} — logo`}
               className="h-14 w-auto rounded-sm object-contain"
               loading="lazy"
