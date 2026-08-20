@@ -53,7 +53,9 @@ export function SiteHeader() {
             <span className={`block font-display text-lg tracking-wide ${tone} sm:text-xl`}>
               Riad Dar Medina Land
             </span>
-            <span className={`block text-[0.6rem] uppercase tracking-[0.28em] ${solid ? "text-cobalt" : "text-on-dark/80"}`}>
+            <span
+              className={`block text-[0.6rem] uppercase tracking-[0.28em] ${solid ? "text-cobalt" : "text-on-dark/80"}`}
+            >
               Médina · Marrakech
             </span>
           </span>
@@ -88,7 +90,11 @@ export function SiteHeader() {
           >
             <Phone className="h-4 w-4" strokeWidth={1.2} />
           </a>
-          <Link to="/contact" search={search} className={`btn-gold btn-gold-hover hidden !px-6 !py-3 sm:inline-flex ${solid ? "" : "!border-on-dark !text-on-dark"}`}>
+          <Link
+            to="/contact"
+            search={search}
+            className={`btn-gold btn-gold-hover hidden !px-6 !py-3 sm:inline-flex ${solid ? "" : "!border-on-dark !text-on-dark"}`}
+          >
             {t.nav.contact}
           </Link>
           <button
@@ -98,7 +104,11 @@ export function SiteHeader() {
             aria-expanded={open}
             className={`${accent} lg:hidden`}
           >
-            {open ? <X className="h-6 w-6" strokeWidth={1.2} /> : <Menu className="h-6 w-6" strokeWidth={1.2} />}
+            {open ? (
+              <X className="h-6 w-6" strokeWidth={1.2} />
+            ) : (
+              <Menu className="h-6 w-6" strokeWidth={1.2} />
+            )}
           </button>
         </div>
       </div>
@@ -116,12 +126,19 @@ export function SiteHeader() {
                 {t.nav[link.key]}
               </Link>
             ))}
-            <Link to="/contact" search={search} className="py-4 text-sm uppercase tracking-[0.2em] text-cobalt">
+            <Link
+              to="/contact"
+              search={search}
+              className="py-4 text-sm uppercase tracking-[0.2em] text-cobalt"
+            >
               {t.nav.contact}
             </Link>
           </nav>
           <div className="mt-6 flex items-center justify-between">
-            <a href={otherLangHref} className="text-xs uppercase tracking-[0.2em] text-foreground/70">
+            <a
+              href={otherLangHref}
+              className="text-xs uppercase tracking-[0.2em] text-foreground/70"
+            >
               {lang === "fr" ? "English" : "Français"}
             </a>
             <a

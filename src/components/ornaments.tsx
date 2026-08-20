@@ -38,7 +38,13 @@ export function ZelligeFrieze({ className = "" }: { className?: string }) {
 }
 
 /** Séparateur : filet + étoile à 8 branches + frise zellige. */
-export function Divider({ className = "", tone = "cobalt" }: { className?: string; tone?: "cobalt" | "terracotta" }) {
+export function Divider({
+  className = "",
+  tone = "cobalt",
+}: {
+  className?: string;
+  tone?: "cobalt" | "terracotta";
+}) {
   const color = tone === "terracotta" ? "text-terracotta" : "text-cobalt";
   return (
     <div className={`flex items-center justify-center gap-4 ${className}`} aria-hidden="true">
@@ -95,7 +101,14 @@ export function MoucharabiehWatermark({ className = "" }: { className?: string }
 /** Guillemet décoratif façon arabesque, pour les témoignages. */
 export function ArabesqueQuote({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 64 48" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1">
+    <svg
+      viewBox="0 0 64 48"
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1"
+    >
       <path d="M26 6C13 8 5 17 5 29c0 7 4.5 12 11 12 5.7 0 9.8-3.9 9.8-9.2 0-5-3.6-8.6-8.6-8.6-1.4 0-2.6.3-3.6.8C15.4 18 19.8 12.6 27 9.6z" />
       <path d="M59 6C46 8 38 17 38 29c0 7 4.5 12 11 12 5.7 0 9.8-3.9 9.8-9.2 0-5-3.6-8.6-8.6-8.6-1.4 0-2.6.3-3.6.8C48.4 18 52.8 12.6 60 9.6z" />
     </svg>
@@ -120,7 +133,11 @@ export function SectionTitle({
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
       {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
       <h2 className="mt-4 text-4xl leading-[1.08] sm:text-5xl md:text-[3.35rem]">{title}</h2>
-      {align === "center" ? <Divider className="mt-7" /> : <ZelligeFrieze className="mt-7 h-4 w-32 text-cobalt opacity-60" />}
+      {align === "center" ? (
+        <Divider className="mt-7" />
+      ) : (
+        <ZelligeFrieze className="mt-7 h-4 w-32 text-cobalt opacity-60" />
+      )}
       {lead ? <p className={`mt-7 text-base leading-relaxed ${leadTone}`}>{lead}</p> : null}
     </div>
   );

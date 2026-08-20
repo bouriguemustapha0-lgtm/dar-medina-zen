@@ -28,7 +28,9 @@ export function SiteFooter() {
               className="h-14 w-auto rounded-sm object-contain"
               loading="lazy"
             />
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">{t.footer.tagline}</p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
+              {t.footer.tagline}
+            </p>
             <div className="mt-6 flex gap-4">
               <a
                 href="https://www.instagram.com/"
@@ -69,7 +71,12 @@ export function SiteFooter() {
             <ul className="mt-5 space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
-                <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+                <a
+                  href={mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold"
+                >
                   {t.address}
                 </a>
               </li>

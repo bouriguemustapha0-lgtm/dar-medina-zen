@@ -34,7 +34,12 @@ export const Route = createFileRoute("/chambres")({
     const lang = loaderData?.lang ?? "fr";
     const t = content[lang];
     return {
-      ...buildHead({ path: "/chambres", lang, title: t.rooms.title, description: t.rooms.description }),
+      ...buildHead({
+        path: "/chambres",
+        lang,
+        title: t.rooms.title,
+        description: t.rooms.description,
+      }),
       scripts: [
         {
           type: "application/ld+json",
@@ -96,7 +101,12 @@ function RoomsPage() {
     <>
       <section className="paper-grain bg-ink px-5 pb-16 pt-36 sm:px-8 sm:pt-44">
         <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow={t.rooms.eyebrow} title={t.rooms.heading} lead={t.rooms.lead} align="left" />
+          <SectionTitle
+            eyebrow={t.rooms.eyebrow}
+            title={t.rooms.heading}
+            lead={t.rooms.lead}
+            align="left"
+          />
         </div>
       </section>
 
@@ -199,14 +209,18 @@ function RoomsPage() {
                           <div className="flex gap-3">
                             <MoucharabiehIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                             <div>
-                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.viewLabel}</dt>
+                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                                {t.rooms.viewLabel}
+                              </dt>
                               <dd className="mt-1 text-foreground/85">{room.view}</dd>
                             </div>
                           </div>
                           <div className="flex gap-3">
                             <HammamIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                             <div>
-                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.bathLabel}</dt>
+                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                                {t.rooms.bathLabel}
+                              </dt>
                               <dd className="mt-1 text-foreground/85">{room.bath}</dd>
                             </div>
                           </div>
@@ -227,7 +241,9 @@ function RoomsPage() {
                           <div className="hidden gap-3 sm:flex">
                             <LanternIcon className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                             <div>
-                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">{t.rooms.priceLabel}</dt>
+                              <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-cobalt">
+                                {t.rooms.priceLabel}
+                              </dt>
                               <dd className="mt-1 text-foreground/85">
                                 {room.price ?? t.rooms.priceValue} {t.rooms.perNight}
                               </dd>
@@ -261,7 +277,11 @@ function RoomsPage() {
                         >
                           {t.cta.bookWhatsapp}
                         </a>
-                        <Link to="/contact" search={search} className="btn-gold lantern-fill arch-pill">
+                        <Link
+                          to="/contact"
+                          search={search}
+                          className="btn-gold lantern-fill arch-pill"
+                        >
                           {t.nav.contact}
                         </Link>
                       </div>

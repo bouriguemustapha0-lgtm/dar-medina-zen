@@ -19,7 +19,6 @@ export function RiadMap({ title, className = "" }: { title: string; className?: 
         {RIAD.name}
       </span>
 
-
       <a
         href={mapsLink}
         target="_blank"

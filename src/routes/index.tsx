@@ -19,9 +19,7 @@ export const Route = createFileRoute("/")({
     const t = content[lang];
     return {
       ...buildHead({ path: "/", lang, title: t.home.title, description: t.home.description }),
-      scripts: [
-        { type: "application/ld+json", children: JSON.stringify(lodgingJsonLd(lang)) },
-      ],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(lodgingJsonLd(lang)) }],
     };
   },
   component: HomePage,
@@ -54,7 +52,9 @@ function HomePage() {
         />
 
         <div className="relative mx-auto max-w-4xl px-6 pt-24 text-center">
-          <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">{t.home.heroEyebrow}</p>
+          <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/85">
+            {t.home.heroEyebrow}
+          </p>
           <h1 className="mt-6 font-display text-[2.35rem] leading-[1.1] text-on-dark sm:text-5xl md:text-[3.9rem]">
             {t.home.heroTitle}
           </h1>
@@ -92,7 +92,9 @@ function HomePage() {
           <div className="grid items-start gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
             <Reveal>
               <p className="eyebrow">{t.home.introEyebrow}</p>
-              <h2 className="mt-4 text-3xl leading-[1.15] sm:text-4xl md:text-[2.7rem]">{t.home.introTitle}</h2>
+              <h2 className="mt-4 text-3xl leading-[1.15] sm:text-4xl md:text-[2.7rem]">
+                {t.home.introTitle}
+              </h2>
               <span className="hairline mt-7 block w-24" />
               <div className="mt-7 space-y-5 text-[0.95rem] leading-relaxed text-ivory-foreground/80">
                 {t.home.introParagraphs.map((p) => (
@@ -145,7 +147,9 @@ function HomePage() {
             <dl className="mt-8 grid gap-x-10 gap-y-6 border-t border-ivory-foreground/15 pt-8 sm:grid-cols-2 lg:grid-cols-3">
               {t.home.facts.map((f) => (
                 <div key={f.label} className="border-b border-ivory-foreground/10 pb-4">
-                  <dt className="text-[0.65rem] uppercase tracking-[0.24em] text-ivory-foreground/55">{f.label}</dt>
+                  <dt className="text-[0.65rem] uppercase tracking-[0.24em] text-ivory-foreground/55">
+                    {f.label}
+                  </dt>
                   <dd className="mt-2 font-display text-lg">{f.value}</dd>
                 </div>
               ))}
@@ -168,7 +172,10 @@ function HomePage() {
             {t.home.amenities.map((a, i) => {
               const Icon = AMENITY_ICONS[i] ?? Sparkles;
               return (
-                <li key={a.title} className="bg-ink p-8 transition-colors duration-500 hover:bg-ink-soft">
+                <li
+                  key={a.title}
+                  className="bg-ink p-8 transition-colors duration-500 hover:bg-ink-soft"
+                >
                   <Icon className="h-6 w-6 text-olive" strokeWidth={1} />
                   <h3 className="mt-5 text-xl">{a.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a.text}</p>
@@ -191,7 +198,11 @@ function HomePage() {
                 <figure className="flex h-full flex-col border border-border border-l-2 border-l-terracotta bg-ivory p-8">
                   <div className="flex gap-1" aria-label={`${r.rating}/5`}>
                     {Array.from({ length: r.rating }).map((_, s) => (
-                      <Star key={s} className="h-3.5 w-3.5 fill-terracotta text-terracotta" strokeWidth={1} />
+                      <Star
+                        key={s}
+                        className="h-3.5 w-3.5 fill-terracotta text-terracotta"
+                        strokeWidth={1}
+                      />
                     ))}
                   </div>
                   <blockquote className="mt-6 flex-1 text-[0.95rem] leading-relaxed text-foreground/85">
@@ -199,7 +210,9 @@ function HomePage() {
                   </blockquote>
                   <figcaption className="mt-6 text-xs uppercase tracking-[0.2em] text-cobalt">
                     {r.author}
-                    <span className="ml-2 text-muted-foreground/70 normal-case tracking-normal">{r.origin}</span>
+                    <span className="ml-2 text-muted-foreground/70 normal-case tracking-normal">
+                      {r.origin}
+                    </span>
                   </figcaption>
                 </figure>
               </Reveal>
@@ -215,7 +228,9 @@ function HomePage() {
       <section className="bg-cobalt-deep py-24 text-on-dark sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <Reveal>
-            <h2 className="font-display text-4xl leading-[1.1] sm:text-5xl">{t.location.heading}</h2>
+            <h2 className="font-display text-4xl leading-[1.1] sm:text-5xl">
+              {t.location.heading}
+            </h2>
             <p className="mt-7 text-[0.95rem] leading-relaxed text-on-dark/80">{t.location.lead}</p>
             <dl className="mt-10">
               {DISTANCE_KEYS.map((key) => {
@@ -241,8 +256,14 @@ function HomePage() {
             </Link>
           </Reveal>
 
-          <Reveal delay={120} className="rounded-2xl border border-on-dark/25 bg-on-dark/10 p-2 shadow-warm-lg">
-            <RiadMap title={t.location.mapCaption} className="h-[22rem] w-full overflow-hidden rounded-xl sm:h-[27rem]" />
+          <Reveal
+            delay={120}
+            className="rounded-2xl border border-on-dark/25 bg-on-dark/10 p-2 shadow-warm-lg"
+          >
+            <RiadMap
+              title={t.location.mapCaption}
+              className="h-[22rem] w-full overflow-hidden rounded-xl sm:h-[27rem]"
+            />
           </Reveal>
         </div>
       </section>
@@ -267,8 +288,12 @@ function HomePage() {
         />
         <div className="relative mx-auto max-w-3xl px-5 sm:px-8">
           <div className="text-center text-on-dark">
-            <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/80">{t.contact.eyebrow}</p>
-            <h2 className="mt-5 font-display text-4xl leading-[1.1] sm:text-5xl">{t.cta.bookWhatsapp}</h2>
+            <p className="text-[0.6875rem] uppercase tracking-[0.3em] text-on-dark/80">
+              {t.contact.eyebrow}
+            </p>
+            <h2 className="mt-5 font-display text-4xl leading-[1.1] sm:text-5xl">
+              {t.cta.bookWhatsapp}
+            </h2>
           </div>
           <BookingForm className="mt-12" />
         </div>

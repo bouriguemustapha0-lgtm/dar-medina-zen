@@ -108,7 +108,14 @@ function ContactPage() {
                 <label className={label} htmlFor="arrival">
                   {t.contact.form.arrival}
                 </label>
-                <input id="arrival" type="date" required value={form.arrival} onChange={set("arrival")} className={field} />
+                <input
+                  id="arrival"
+                  type="date"
+                  required
+                  value={form.arrival}
+                  onChange={set("arrival")}
+                  className={field}
+                />
               </div>
               <div>
                 <label className={label} htmlFor="departure">
@@ -154,14 +161,22 @@ function ContactPage() {
                 <label className={label} htmlFor="message">
                   {t.contact.form.message}
                 </label>
-                <textarea id="message" rows={4} value={form.message} onChange={set("message")} className={field} />
+                <textarea
+                  id="message"
+                  rows={4}
+                  value={form.message}
+                  onChange={set("message")}
+                  className={field}
+                />
               </div>
             </div>
 
             <button type="submit" className="btn-solid-gold mt-8 w-full">
               {t.contact.form.submit}
             </button>
-            <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{t.contact.form.note}</p>
+            <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+              {t.contact.form.note}
+            </p>
             <p className="mt-2 text-xs text-muted-foreground">
               {t.contact.form.alt} :{" "}
               <a href={`mailto:${RIAD.email}`} className="text-gold hover:underline">
@@ -186,8 +201,13 @@ function ContactPage() {
               <div className="flex gap-4">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
                 <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">{t.contact.phoneLabel}</p>
-                  <a href={`tel:${RIAD.phone}`} className="mt-1 block text-foreground/85 hover:text-gold">
+                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">
+                    {t.contact.phoneLabel}
+                  </p>
+                  <a
+                    href={`tel:${RIAD.phone}`}
+                    className="mt-1 block text-foreground/85 hover:text-gold"
+                  >
                     {RIAD.phoneDisplay}
                   </a>
                 </div>
@@ -195,8 +215,13 @@ function ContactPage() {
               <div className="flex gap-4">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
                 <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">{t.contact.emailLabel}</p>
-                  <a href={`mailto:${RIAD.email}`} className="mt-1 block text-foreground/85 hover:text-gold">
+                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">
+                    {t.contact.emailLabel}
+                  </p>
+                  <a
+                    href={`mailto:${RIAD.email}`}
+                    className="mt-1 block text-foreground/85 hover:text-gold"
+                  >
                     {RIAD.email}
                   </a>
                 </div>
@@ -204,7 +229,9 @@ function ContactPage() {
               <div className="flex gap-4">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
                 <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">{t.contact.addressLabel}</p>
+                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">
+                    {t.contact.addressLabel}
+                  </p>
                   <a
                     href={mapsLink}
                     target="_blank"
@@ -218,7 +245,9 @@ function ContactPage() {
               <div className="flex gap-4">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
                 <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">{t.contact.hoursLabel}</p>
+                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">
+                    {t.contact.hoursLabel}
+                  </p>
                   <p className="mt-1 text-foreground/85">{t.contact.hoursValue}</p>
                 </div>
               </div>

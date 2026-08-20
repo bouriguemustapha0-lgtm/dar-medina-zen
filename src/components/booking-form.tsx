@@ -50,7 +50,10 @@ export function BookingForm({ className = "" }: { className?: string }) {
           "linear-gradient(160deg, oklch(0.468 0.135 251 / 88%) 0%, oklch(0.3 0.09 252 / 90%) 100%)",
       }}
     >
-      <span className="pointer-events-none absolute inset-2 border border-on-dark/12" aria-hidden="true" />
+      <span
+        className="pointer-events-none absolute inset-2 border border-on-dark/12"
+        aria-hidden="true"
+      />
       <div className="relative mb-8 flex items-center justify-center gap-4" aria-hidden="true">
         <span className="h-px w-14 bg-on-dark/25" />
         <EightPointStar className="h-4 w-4 text-terracotta" />
@@ -76,7 +79,14 @@ export function BookingForm({ className = "" }: { className?: string }) {
           <label className={label} htmlFor="bf-arrival">
             {t.contact.form.arrival}
           </label>
-          <input id="bf-arrival" type="date" required value={form.arrival} onChange={set("arrival")} className={field} />
+          <input
+            id="bf-arrival"
+            type="date"
+            required
+            value={form.arrival}
+            onChange={set("arrival")}
+            className={field}
+          />
         </div>
         <div>
           <label className={label} htmlFor="bf-departure">
