@@ -112,13 +112,9 @@
   --input: oklch(0.585 0.148 249 / 32%);
   --ring: oklch(0.585 0.148 249 / 55%);
 
-  --gradient-cobalt: linear-gradient(
-    100deg,
-    var(--cobalt-deep),
-    var(--cobalt),
-    var(--cobalt-deep)
-  );
-  --shadow-cobalt-soft: 0 0 0 1px oklch(0.585 0.148 249 / 28%), 0 18px 50px -24px oklch(0.585 0.148 249 / 45%);
+  --gradient-cobalt: linear-gradient(100deg, var(--cobalt-deep), var(--cobalt), var(--cobalt-deep));
+  --shadow-cobalt-soft:
+    0 0 0 1px oklch(0.585 0.148 249 / 28%), 0 18px 50px -24px oklch(0.585 0.148 249 / 45%);
   --shadow-frame-deep: 0 24px 60px -34px oklch(0.255 0.021 252 / 30%);
 
   /* Texture zellige bleu & blanc */
@@ -355,7 +351,11 @@
 
 /* CTA : remplissage progressif façon lanterne qui s'allume */
 @utility lantern-fill {
-  background-image: radial-gradient(120% 180% at 50% 100%, var(--terracotta), var(--terracotta-deep));
+  background-image: radial-gradient(
+    120% 180% at 50% 100%,
+    var(--terracotta),
+    var(--terracotta-deep)
+  );
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: 100% 0%;
@@ -404,8 +404,12 @@
     border-radius: 50%;
     background: var(--background);
   }
-  &::before { top: -0.45rem; }
-  &::after { bottom: -0.45rem; }
+  &::before {
+    top: -0.45rem;
+  }
+  &::after {
+    bottom: -0.45rem;
+  }
 }
 
 @utility sticky-ticket-header {
@@ -428,4 +432,3 @@
   letter-spacing: 0.05em;
   color: color-mix(in oklch, var(--foreground) 80%, transparent);
 }
-

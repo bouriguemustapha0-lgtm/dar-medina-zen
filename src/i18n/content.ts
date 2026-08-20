@@ -168,7 +168,7 @@ const fr = {
         name: "Chambre Triple Classique",
         view: "Chambre sur la maison",
         bath: "Salle de bains privative : baignoire, papier toilette",
-        text: 'Faite pour voyager à trois : 12 m², deux grands lits doubles, murs de zellige et une vraie baignoire pour dénouer la journée. Simple, fraîche, climatisée, à deux pas de Jemaa el-Fna. Non-fumeurs.',
+        text: "Faite pour voyager à trois : 12 m², deux grands lits doubles, murs de zellige et une vraie baignoire pour dénouer la journée. Simple, fraîche, climatisée, à deux pas de Jemaa el-Fna. Non-fumeurs.",
         size: "12 m²",
         beds: "2 lits doubles",
         price: "50 €",
@@ -206,7 +206,7 @@ const fr = {
         name: "Chambre Double",
         view: "Terrasse, vue sur la montagne et sur la cour intérieure",
         bath: "Salle de bains privative : baignoire, baignoire balnéo, douche, bidet, toilettes, toilettes supplémentaires, articles de toilette gratuits, peignoir, chaussons, sèche-cheveux, papier toilette",
-        text: 'Un nid de 10 m² qui ouvre sur sa terrasse : vue montagne, vue patio, et le silence de la médina. Peignoirs, articles de toilette, coin repas et baignoire balnéo — le petit luxe discret des voyageurs à deux.',
+        text: "Un nid de 10 m² qui ouvre sur sa terrasse : vue montagne, vue patio, et le silence de la médina. Peignoirs, articles de toilette, coin repas et baignoire balnéo — le petit luxe discret des voyageurs à deux.",
         size: "10 m²",
         beds: "1 lit double",
         price: "45 €",
@@ -286,7 +286,6 @@ const fr = {
           "Non-fumeurs",
         ],
       },
-
     },
   },
   location: {
@@ -366,7 +365,10 @@ const fr = {
       },
       {
         q: "Peut-on privatiser le riad entier ?",
-        a: "Oui, les 8 chambres peuvent être réservées ensemble pour un mariage, un séminaire ou une réunion de famille. Contactez-nous par WhatsApp au " + RIAD.phoneDisplay + " pour un devis.",
+        a:
+          "Oui, les 8 chambres peuvent être réservées ensemble pour un mariage, un séminaire ou une réunion de famille. Contactez-nous par WhatsApp au " +
+          RIAD.phoneDisplay +
+          " pour un devis.",
       },
     ],
   },
@@ -412,9 +414,12 @@ const fr = {
     hero: "Patio central du Riad Dar Medina Land à la tombée du jour, arcades en cèdre sculpté, fontaine en zellige et lanternes en laiton allumées",
     room: "Chambre du riad avec fenêtre en arc ouverte sur les montagnes de l'Atlas, murs en tadelakt et lampe en laiton",
     spa: "Hammam traditionnel du riad, murs en tadelakt gris, seau en laiton et étoiles de lumière percées dans la voûte",
-    zellige: "Détail de zelliges noirs et or à étoile à huit branches et moucharabieh en cèdre sculpté",
-    terrace: "Terrasse du riad au coucher du soleil avec théière en argent, lanternes et minaret de la Koutoubia à l'horizon",
-    breakfast: "Petit-déjeuner continental servi dans le patio : crêpes marocaines, fruits frais, fromage et thé à la menthe",
+    zellige:
+      "Détail de zelliges noirs et or à étoile à huit branches et moucharabieh en cèdre sculpté",
+    terrace:
+      "Terrasse du riad au coucher du soleil avec théière en argent, lanternes et minaret de la Koutoubia à l'horizon",
+    breakfast:
+      "Petit-déjeuner continental servi dans le patio : crêpes marocaines, fruits frais, fromage et thé à la menthe",
   },
 };
 
@@ -539,7 +544,7 @@ const en: typeof fr = {
         name: "Double Room with Terrace",
         view: "Private terrace",
         bath: "Private bathroom: whirlpool bath, shower or bath, bidet, extra toilet, hairdryer, toilet paper",
-        text: 'Push the door open: 12 m² full of light, zellige tiles up to the ceiling and your own terrace for evening tea. The spa bath is waiting after the souks, the air conditioning does the rest. Beds rated 7.6 by 136 travellers.',
+        text: "Push the door open: 12 m² full of light, zellige tiles up to the ceiling and your own terrace for evening tea. The spa bath is waiting after the souks, the air conditioning does the rest. Beds rated 7.6 by 136 travellers.",
         size: "12 m²",
         beds: "1 double bed",
         price: "45 €",
@@ -584,7 +589,7 @@ const en: typeof fr = {
         name: "Classic Triple Room",
         view: "Room inside the house",
         bath: "Private bathroom: bath, toilet paper",
-        text: 'Made for travelling as three: 12 m², two generous double beds, zellige walls and a real bathtub to unwind the day. Simple, cool, air-conditioned, minutes from Jemaa el-Fna. Non-smoking.',
+        text: "Made for travelling as three: 12 m², two generous double beds, zellige walls and a real bathtub to unwind the day. Simple, cool, air-conditioned, minutes from Jemaa el-Fna. Non-smoking.",
         size: "12 m²",
         beds: "2 double beds",
         price: "50 €",
@@ -603,7 +608,7 @@ const en: typeof fr = {
         name: "Comfort Triple Room",
         view: "Room inside the house",
         bath: "Private bathroom: bath, toilet paper",
-        text: 'Mint-green walls, a red banquette and Berber rugs — the warmest of our triples. 12 m², two double beds, private bath and air conditioning made for mid-afternoon naps. Non-smoking.',
+        text: "Mint-green walls, a red banquette and Berber rugs — the warmest of our triples. 12 m², two double beds, private bath and air conditioning made for mid-afternoon naps. Non-smoking.",
         size: "12 m²",
         beds: "2 double beds",
         price: "50 €",
@@ -622,7 +627,7 @@ const en: typeof fr = {
         name: "Double Room",
         view: "Terrace, mountain view and inner courtyard view",
         bath: "Private bathroom: bath, whirlpool bath, shower, bidet, toilet, extra toilet, free toiletries, bathrobe, slippers, hairdryer, toilet paper",
-        text: 'A 10 m² nest that opens onto its own terrace: mountain views, patio views and the hush of the medina. Bathrobes, toiletries, dining nook and a spa bath — quiet luxury for two.',
+        text: "A 10 m² nest that opens onto its own terrace: mountain views, patio views and the hush of the medina. Bathrobes, toiletries, dining nook and a spa bath — quiet luxury for two.",
         size: "10 m²",
         beds: "1 double bed",
         price: "45 €",
@@ -647,7 +652,7 @@ const en: typeof fr = {
         name: "Single Room",
         view: "Room within the riad",
         bath: "Private bathroom: bath, toilet paper",
-        text: 'Compact and bright, 6 m² built around the essentials: a cosy bed, blue zellige, air conditioning and a private bathroom with a bath. The medina starts right outside your door.',
+        text: "Compact and bright, 6 m² built around the essentials: a cosy bed, blue zellige, air conditioning and a private bathroom with a bath. The medina starts right outside your door.",
         size: "6 m²",
         beds: "1 single bed",
         price: "35 €",
@@ -665,7 +670,7 @@ const en: typeof fr = {
         name: "Deluxe Suite",
         view: "Private suite with separate living room",
         bath: "Private bathroom: spa bath, shower or bath, bidet, hairdryer, additional toilet, toilet paper",
-        text: 'Our finest space: a living room of your own, a bedroom behind its own door, 12 m² dressed in zellige and Moroccan craft. Sofa bed for a third traveller, spa bath to close the day gently.',
+        text: "Our finest space: a living room of your own, a bedroom behind its own door, 12 m² dressed in zellige and Moroccan craft. Sofa bed for a third traveller, spa bath to close the day gently.",
         size: "12 m²",
         beds: "Bedroom 1: 1 double bed · Living room: 1 sofa bed",
         price: "45 €",
@@ -702,7 +707,6 @@ const en: typeof fr = {
           "Non-smoking",
         ],
       },
-
     },
   },
   location: {
@@ -782,7 +786,10 @@ const en: typeof fr = {
       },
       {
         q: "Can the whole riad be privatised?",
-        a: "Yes, all 8 rooms can be booked together for a wedding, a retreat or a family gathering. Contact us on WhatsApp at " + RIAD.phoneDisplay + " for a quote.",
+        a:
+          "Yes, all 8 rooms can be booked together for a wedding, a retreat or a family gathering. Contact us on WhatsApp at " +
+          RIAD.phoneDisplay +
+          " for a quote.",
       },
     ],
   },
@@ -828,9 +835,12 @@ const en: typeof fr = {
     hero: "Central patio of Riad Dar Medina Land at dusk with carved cedar arcades, zellige fountain and lit brass lanterns",
     room: "Riad bedroom with an arched window open onto the Atlas mountains, tadelakt walls and a brass lamp",
     spa: "Traditional riad hammam with grey tadelakt walls, brass bucket and star-shaped light openings in the vault",
-    zellige: "Close-up of black and gold eight-pointed star zellige and a carved cedar moucharabieh screen",
-    terrace: "Riad rooftop terrace at sunset with a silver teapot, lanterns and the Koutoubia minaret on the horizon",
-    breakfast: "Continental breakfast served in the patio: Moroccan pancakes, fresh fruit, cheese and mint tea",
+    zellige:
+      "Close-up of black and gold eight-pointed star zellige and a carved cedar moucharabieh screen",
+    terrace:
+      "Riad rooftop terrace at sunset with a silver teapot, lanterns and the Koutoubia minaret on the horizon",
+    breakfast:
+      "Continental breakfast served in the patio: Moroccan pancakes, fresh fruit, cheese and mint tea",
   },
 };
 

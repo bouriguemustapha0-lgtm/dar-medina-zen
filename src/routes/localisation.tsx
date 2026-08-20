@@ -48,7 +48,12 @@ function LocationPage() {
           />
           <p className="mt-8 flex items-start gap-3 text-sm text-foreground/85">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
-            <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+            <a
+              href={mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold"
+            >
               {t.address} — {RIAD.phoneDisplay}
             </a>
           </p>
@@ -65,7 +70,10 @@ function LocationPage() {
                 <caption className="sr-only">{t.location.mapCaption}</caption>
                 <thead>
                   <tr className="border-b border-ivory-foreground/25">
-                    <th scope="col" className="py-3 pr-4 text-[0.65rem] uppercase tracking-[0.24em]">
+                    <th
+                      scope="col"
+                      className="py-3 pr-4 text-[0.65rem] uppercase tracking-[0.24em]"
+                    >
                       {t.location.tableHead.place}
                     </th>
                     <th scope="col" className="py-3 text-[0.65rem] uppercase tracking-[0.24em]">
@@ -107,7 +115,10 @@ function LocationPage() {
           <h2 className="text-2xl">{t.location.mapTitle}</h2>
           <span className="hairline mt-5 block w-20" />
           <div className="mt-8 border border-border p-2">
-            <RiadMap title={t.location.mapCaption} className="h-[22rem] w-full overflow-hidden sm:h-[28rem]" />
+            <RiadMap
+              title={t.location.mapCaption}
+              className="h-[22rem] w-full overflow-hidden sm:h-[28rem]"
+            />
           </div>
           <p className="mt-4 text-xs text-muted-foreground">{t.location.mapCaption}</p>
         </div>

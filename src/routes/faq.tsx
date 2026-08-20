@@ -54,7 +54,9 @@ function FaqPage() {
                       aria-expanded={isOpen}
                       className="flex w-full items-start justify-between gap-6 py-6 text-left"
                     >
-                      <span className="font-display text-lg text-foreground sm:text-xl">{item.q}</span>
+                      <span className="font-display text-lg text-foreground sm:text-xl">
+                        {item.q}
+                      </span>
                       {isOpen ? (
                         <Minus className="mt-1 h-4 w-4 shrink-0 text-gold" strokeWidth={1.2} />
                       ) : (

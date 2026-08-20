@@ -31,10 +31,7 @@ export const whatsappLink = (message: string) =>
 export const mailtoLink = (subject: string, body: string) =>
   `mailto:${RIAD.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-
-
 export const mapsLink = "https://maps.app.goo.gl/bZHUq6eokmRQG395A";
-
 
 /** Carte Google : un seul repère nommé « Riad Dar Medina Land ». */
 export const mapEmbedSrc = `https://www.google.com/maps?q=${RIAD.latitude},${RIAD.longitude}(${encodeURIComponent(
@@ -62,5 +59,14 @@ export const DISTANCE_KEYS = [
 
 export type DistanceKey = (typeof DISTANCE_KEYS)[number];
 
-export const ROOM_KEYS = ["andalouse", "patio", "suite", "triple", "tripleConfort", "double", "simple", "economique"] as const;
+export const ROOM_KEYS = [
+  "andalouse",
+  "patio",
+  "suite",
+  "triple",
+  "tripleConfort",
+  "double",
+  "simple",
+  "economique",
+] as const;
 export type RoomKey = (typeof ROOM_KEYS)[number];
